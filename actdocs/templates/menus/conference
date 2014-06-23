@@ -5,3 +5,4 @@
 <li> <a href="[% make_uri('venue.html') %]">Venue</a></li>
 <li> <a href="http://blog.yapcna.org">Blog</a> </li>
 <li> <a href="[% make_uri('wiki') %]">Wiki</a> </li>
+<li> <a href="[% make_uri('wiki?node=PresentationMaterials') %]">Presentation Slides</a> </li>
