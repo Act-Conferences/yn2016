@@ -1,0 +1,39 @@
+[% WRAPPER ui title = "Event Price" %]
+[% PROCESS _conf/main %]
+
+<div class="row"><div class="h1 col-xs-12">Event Price $250</div></div>
+
+[% IF ! global.config.payment_open %]
+<p>Prices have not yet been set for this year&#39;s event.   We hope to have
+this information available soon.   We aim to provide the lowest possible cost
+event while still maintaining ground-breaking quality.</p>
+[% ELSE %]
+<h3>What you get:</h3>
+
+<ul>
+    <li>Admission to the three-day (Monday - Wednesday) main event, including keynotes, talks.</li>
+    <li>Opportunity to talk to Perl job recruiters</li>
+    <li>Access to dozens of CPAN authors and key Perl community members</li>
+    <li>Admission to Open-space forums, BOF's, and other great activities</li>
+</ul>
+
+<p>Advanced registration is required.</p>
+
+<h3>Can't afford it?</h3>
+
+<ul>
+    <li>Consider <a href="[% make_uri('newtalk') %]">Submitting a talk.</a>  All speakers may opt for free registration.</li>
+    <li>We do have some scholarships available for students or military personell (active duty or veterans -- valid current ID required).   Contact <a href="mailto:admin@yapcna.org">admin@yapcna.org</a> for more information.</li>
+</ul>
+
+<h3>Have questions?</h3>
+
+<ul>
+    <li>Please contact <a href="mailto:admin@yapcna.org">admin@yapcna.org</a> for more information.</li>
+</ul>
+
+<p>Space is limited for add-on classes.   <a href="[% make_uri('purchase') %]">Advanced registration</a> is required.</p>
+
+[% END %]
+[% END %]
+

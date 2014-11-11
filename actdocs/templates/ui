@@ -1,0 +1,62 @@
+[% PROCESS _conf/main %]
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="[% global.request.language %]" />
+<meta name="keywords" content="pghpw Pittsburgh Perl Workshop" />
+<meta name="description" content="The Pittsburgh Perl Workshop" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
+      href="http://pghpw.org/atom/[% global.request.language %].xml" />
+
+
+<link rel="stylesheet" href="[% make_uri( 'css/bootstrap.css' ) %]">
+<link rel="stylesheet" href="[% make_uri( 'css/main.css' ) %]">
+
+<script src="[% make_uri( 'js/vendor/modernizr-2.6.2.min.js' ) %]"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+[%- IF title -%]<title>[% title  %]</title>[%- END -%]
+</head>
+<body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    [% PROCESS navbar %]
+
+    <br />
+    <div class="container page-content">
+        [% content %]
+    </div>
+
+    <div class="container footer">
+        <div class="row">
+        <p>&nbsp; Copyright &copy; 1999-[% site.event_year %] Yet Another Perl Conference.</p>
+        </div>
+    </div>
+
+    <script src="[% make_uri('js/bootstrap.min.js') %]"></script>
+    <script src="[% make_uri('js/plugins.js') %]"></script>
+    <script src="[% make_uri('js/main.js') %]"></script>
+
+    <script type="text/javascript" src="/js/act.js"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-346453-3']);
+      _gaq.push(['_setDomainName', 'pghpw.org']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+</body>
+</html>

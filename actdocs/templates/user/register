@@ -1,0 +1,72 @@
+[% WRAPPER ui title = loc('Registration') %]
+
+[% USE date %]
+[% IF date.now > end_date %]
+<p>
+ {{Sorry, this conference is over.}}
+</p>
+[% ELSE %]
+
+<p>
+ [% loc('To register to the <name> conference', global.conference.name) %]
+</p>
+
+<center>
+
+<form role="form" method="POST" action="[% global.request.r.uri %]">
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <td>
+            <table border="0" cellpadding="0" cellspacing="10">
+            <tr>
+                <td colspan="3" align="rigaht">
+                    <div id="code" style="padding-top: 10px; height: 300px; width: 420px; overflow:scroll; overflow-y:scroll; overflow-x:none width: 300px; text-align:left">
+		    [% INCLUDE conduct %]
+                    </div>
+                    <a href="conduct.html" target="_blank">Link to this agreement.</a>
+                </td>
+            </tr>
+            <tr>
+               <td colspan="3" align="right">
+                  <input type="checkbox" id="agree" style="vertical-align: middle" /> <label for="agree" style="vertical-align: middle">I agree to the above <b>Code of Conduct</b>.</label>
+               </td>
+            </tr>
+
+            <tr>
+               <td colspan="3" align="right">
+                  <input type="submit" id="join" disabled="disabled" name="join" value="{{Join}} [% global.conference.name %]" />
+               </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+    </table>
+</form>
+
+<script type="text/javascript">
+    window.onload = function() {
+        var code = document.getElementById("code");
+        var agree = document.getElementById("agree");
+        var join = document.getElementById("join");
+
+        // Set the focus to the code of conduct.
+        code.focus();
+
+        // Setup the click handler.
+        agree.onclick = function() {
+            if(agree.checked) {
+                // We can proceed.
+                join.disabled = false;
+            } else {
+                // No way.
+                join.disabled = true;
+            }
+        }
+    };
+</script>
+
+</center>
+
+[% END %]
+
+[% END %]

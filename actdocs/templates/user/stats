@@ -1,0 +1,44 @@
+[% WRAPPER ui title = loc('<conf name> Statistics', global.conference.name) %]
+
+<p>
+ [% loc('There are n registered people', stats.users, stats.countries.size, stats.pm.size, stats.committed) %]
+</p>
+
+<p>
+ [% loc("You can have a look at country / mongers or cities statistics.", make_uri('stats'), make_uri('stats', 'show', 'cities')) %]
+</p>
+<p>
+ {{The number of committed users is listed between parentheses}}
+</p>
+<p>
+ {{Click on the various links to find the corresponding users!}}
+</p>
+
+<div class="row">
+<div class="col-md-6">
+  <!-- Countries -->
+   <table class="table table-striped">
+  <tr><td>{{Countries}}</td><td>Count</td></tr>
+    [% FOREACH c = stats.countries -%]
+    <tr>
+     <td><a href="[% make_uri('search', 'country', c.iso) %]">[% c.name %]</a></td>
+     <td>[% c.count %]&nbsp;([% c.committed %])</td>
+    </tr>
+    [% END -%]
+   </table>
+</div>
+<div class="col-md-6">
+  <!-- PM groups -->
+   <table class="table table-striped">
+    [% '&nbsp;' UNLESS stats.pm.size %]
+  <tr><td>{{Monger groups}}</td><td>Count</td></tr>
+    [% FOREACH pm = stats.pm %]
+    <tr>
+      <td><a href="[% make_uri('search', 'pm_group', pm.name) %]">[% pm.name %]</a></td>
+      <td>[% pm.count %]&nbsp;([% pm.committed %])</td>
+    </tr>
+    [% END %]
+  </table>
+</div>
+</div>
+[% END %]
