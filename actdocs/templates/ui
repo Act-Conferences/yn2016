@@ -5,11 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="[% global.request.language %]" />
-<meta name="keywords" content="pghpw Pittsburgh Perl Workshop" />
-<meta name="description" content="The Pittsburgh Perl Workshop" />
+<meta name="keywords" content="yapcna yapc YAPC::NA 2015" />
+<meta name="description" content="YAPC::NA 2015" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
-      href="http://pghpw.org/atom/[% global.request.language %].xml" />
+      href="http://blog.yapcna.org/feed/atom/" />
 
 
 <link rel="stylesheet" href="[% make_uri( 'css/bootstrap.css' ) %]">
@@ -48,7 +48,7 @@
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-346453-3']);
-      _gaq.push(['_setDomainName', 'pghpw.org']);
+      _gaq.push(['_setDomainName', 'yapcna.org']);
       _gaq.push(['_trackPageview']);
 
       (function() {
