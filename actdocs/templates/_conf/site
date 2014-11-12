@@ -16,8 +16,6 @@
         list_general_url  = 'http://mail.pm.org/mailman/listinfo/yapc',
         list_announce_url = 'http://yapcna.org/mailman/listinfo/announce_yapcna.org',
 
-        pgh_pm = '<a href="http://pgh.pm.org">Pittsburgh Perl Mongers</a>',
-
         track_easy = 'introductory',
         track_hard = 'advanced',
 
