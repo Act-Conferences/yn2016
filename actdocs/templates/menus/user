@@ -7,6 +7,7 @@
         <li><a href="[% make_uri('main') %]">Your information</li>
         <li><a href="[% make_uri_info('user', global.request.user.user_id) %]">View profile</a></li>
         <li><a href="[% make_uri('change') %]">{{Edit profile}}</a></li>
+        <li><a href="[% make_uri('changepwd') %]">Change your password</a></li>
         [% UNLESS global.request.user.participation %]
          <li><a href="[% make_uri('register') %]">{{Register}}</a></li>
         [% END %]
