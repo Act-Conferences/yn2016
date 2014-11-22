@@ -215,7 +215,7 @@
 </div>
 [% END %]
 
-<button type="submit" name= "join" class="btn btn-default">{{Update info}}</button>
+<button type="submit" name= "join" value= "{{Update info}}" class="btn btn-default">{{Update info}}</button>
 
 </form>
 [% END %]
