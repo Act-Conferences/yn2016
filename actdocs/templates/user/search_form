@@ -44,14 +44,20 @@
 
 <br />
 
+<div class="row">
+<div class="col-md-1 col-md-offset-5">
 [% IF prev %]
   <input type="hidden" name="oprev" value="[% oprev %]" />
   <button type="submit" name="prev" class="btn btn-primary btn-lg" value="&lt;&lt;">&lt;&lt;</button>
 [% END %]
+</div>
+<div class="col-md-1">
 [% IF next %]
   [% "&nbsp;&nbsp;&nbsp;" IF oprev %]
   <input type="hidden" name="onext" value="[% onext %]" />
   <button type="submit" name="next" class="btn btn-primary btn-lg" value="&gt;&gt;">&gt;&gt;</button>
 [% END %]
+</div>
+</div>
 </form>
 [% END %]
