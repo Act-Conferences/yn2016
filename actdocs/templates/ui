@@ -30,6 +30,7 @@
 
     <br />
     <div class="container page-content">
+    	<div class="alert alert-warning" role="alert"><em><b>Maintenance notice:</b></em> Our payment system will be temporarily unavailable today as we perform system maintenance.  You may experience difficulty purchasing your event ticket.</div>
         [% content %]
     </div>
 
