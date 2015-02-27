@@ -118,5 +118,31 @@
                 knowledgeable support specialists; and our secure and reliable
                 servers.'
         }
+#  Dreamhost not paid yet.  -Dan 2/27/15
+#        dreamhost = {
+#	    name = 'DreamHost'
+#	    url  = 'http://www.dreamhost.com'
+#	    logo = 'dh_logo-a-2014.png'
+#	    description = ''
+#	}
+        freeside = {
+	    name = 'Freeside'
+	    url  = 'http://freeside.biz'
+	    logo = 'freeside.png'
+	    description = '
+		    <p>Freeside Internet Services, Inc. is a small, distributed software company. We
+		    work with ISPs, VoIP providers and CLECs (small telcos). Our software provides
+		    billing, trouble ticketing (based on Request Tracker) and other operational and
+		    automation features. The software is written in Perl and licensed 100% freely /
+		    open-source.</p>
+
+		    <p>We\'re active CPAN contributors, maintainers of Business::CreditCard,
+		    Business::OnlinePayment and assorted other modules.</p>
+
+		    <p>We\'re looking to hire Perl developers with a passion for open-source. We value
+		    working code, work/life balance, communication and independence. We try to keep
+		    our developers\' lives as free as possible of things like meetings,
+		    over-process, and other obstacles.</p>'
+        }   
     }
 %]
