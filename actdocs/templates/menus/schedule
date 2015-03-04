@@ -11,10 +11,12 @@
            <li><a href="[% make_uri('myschedule') %]"> {{Personal Schedule}} </a></li>
        [% END %]
        <li class="divider"></li>
+   [% ELSE %]
+       <li>Schedule not released</li>
    [% END %]
 
 
-   [% IF global.request.user.is_talks_admin %]
+   [% IF global.request.user.is_admin or global.request.user.is_talks_admin %]
         <li><a href="[% make_uri('talks') %]"> Submitted Talks </a></li>
         <li><a href="[% make_uri('tracks') %]"> {{Tracks}} </a></li>
         <li><a href="[% make_uri('ical_import') %]"> {{iCal import}} </a></li>
@@ -26,6 +28,8 @@
 
     [% IF global.config.talks_submissions_open OR global.request.user.is_talks_admin %]
         <li><a href="[% make_uri('newtalk') %]"> Submit a talk </a></li>
+    [% ELSE %]
+        <li>Talk submission closed</li>
     [% END %]
 
     </ul>
