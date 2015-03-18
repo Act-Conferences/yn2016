@@ -118,13 +118,19 @@
                 knowledgeable support specialists; and our secure and reliable
                 servers.'
         }
-#  Dreamhost not paid yet.  -Dan 2/27/15
-#        dreamhost = {
-#	    name = 'DreamHost'
-#	    url  = 'http://www.dreamhost.com'
-#	    logo = 'dh_logo-a-2014.png'
-#	    description = ''
-#	}
+        dreamhost = {
+	    name = 'DreamHost'
+	    url  = 'http://www.dreamhost.com'
+	    logo = 'dh_logo-a-2014.png'
+	    description = '
+		<p>Since 1997 DreamHost has helped entrepreneurs and developers
+                the world over bring their dreams to life on the Internet. From domain
+                registrations to web hosting and even powerful cloud storage and computing
+                services, more than 400,000 customers trust DreamHost to be their online home.
+                Packed with unbelievable value, DreamHost is the best place to launch a blog,
+                website, or web application into the stratosphere. Learn more at
+                <a href="http://www.dreamhost.com">www.DreamHost.com</a></p>'
+	}
         freeside = {
 	    name = 'Freeside'
 	    url  = 'http://freeside.biz'
@@ -144,5 +150,11 @@
 		    our developers\' lives as free as possible of things like meetings,
 		    over-process, and other obstacles.</p>'
         }   
+        perl6 = {
+	    name = 'The Perl 6 Community'
+	    url   = 'http://perl6.org'
+	    logo  = '256px-Camelia.svg.png'
+	    description = ''
+	}
     }
 %]
