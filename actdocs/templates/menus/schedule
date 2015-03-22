@@ -15,6 +15,7 @@
        <li>Schedule not released</li>
    [% END %]
        <li><a href="[% make_uri('masters.html') %]">Master classes</a></li>
+       <li><a href="[% make_uri('hackathons.html') %]">Hackathons</a></li>
 
 
    [% IF global.request.user.is_admin or global.request.user.is_talks_admin %]
