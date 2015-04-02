@@ -6,8 +6,8 @@
         <li><a href="[% make_uri('location.html') %]">Location</a></li>
         <li><a href="[% make_uri('sponsors.html') %]">Sponsors</a></li>
         <li><a href="[% make_uri('conduct.html') %]">Standards of Conduct</a></li>
-        <li><a href="http://blog.yapcna.org/">Blog </a></li>
-        <li><a href="[% make_uri('wiki') %]">Wiki </a></li>
+        <li><a href="[% make_uri('news') %]">{{News}}</a></li>
+        <li><a href="[% make_uri('wiki') %]">Wiki</a></li>
         <li><a href="[% make_uri('stats') %]">{{Statistics}}</a></li>
     [% IF global.request.user.is_admin or global.config.survey_open %]
         <li><a href="http://ppw2011.yapc-surveys.org/">Survey </a></li>
