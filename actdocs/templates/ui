@@ -20,7 +20,7 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://www.yapcna.org/yn2015/images/utah_ad.png">
 [% IF description -%]
-<meta property="og:description" content="[% description | truncate(80) | html %]">
+<meta property="og:description" content="[% description | truncate(200) | html %]">
 [%- END %]
 
 <!-- Twitter card -->
@@ -35,7 +35,7 @@
 <meta name="twitter:title" content="YAPC::NA 2015">
 [%- END %]
 [%- IF description %]
-<meta name="twitter:description" content="[% description | truncate(80) | html %]">
+<meta name="twitter:description" content="[% description | truncate(200) | html %]">
 [% END -%]
 
 <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
