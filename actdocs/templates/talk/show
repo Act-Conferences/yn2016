@@ -1,4 +1,4 @@
-[% WRAPPER ui title = title %]
+[% WRAPPER ui title = title, description = abstract %]
 
 <h3>[% title %]</h3>
 

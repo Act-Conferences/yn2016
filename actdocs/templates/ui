@@ -8,6 +8,32 @@
 <meta name="keywords" content="yapcna yapc YAPC::NA 2015" />
 <meta name="description" content="YAPC::NA 2015" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- OpenGraph for Facebook etc. -->
+[% IF title -%]
+<meta property="og:title" content="[% title | html %]">
+[%- ELSE -%]
+<meta property="og:title" content="YAPC::NA 2015">
+[%- END %]
+<meta property="og:site_name" content="YAPC::NA 2015">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://www.yapcna.org/yn2015/images/utah_ad.png">
+[% IF description -%]
+<meta property="og:description" content="[% description | truncate(80) | html %]">
+[%- END %]
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@yapcna">
+<meta name="twitter:image" content="http://www.yapcna.org/yn2015/images/utah_ad.png">
+[%- IF title %]
+<meta property="twitter:title" content="[% title | html %]">
+[%- ELSE -%]
+<meta property="twitter:title" content="YAPC::NA 2015">
+[%- END %]
+[%- IF description %]
+<meta property="twitter:description" content="[% description | truncate(80) | html %]">
+[% END -%]
+
 <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
       href="http://blog.yapcna.org/feed/atom/" />
 
