@@ -1,4 +1,4 @@
-[% WRAPPER ui title = title, description = abstract %]
+[% WRAPPER ui title = title, description = abstract, ogtitle = user_info_base(user) _ ' - ' _ title %]
 
 <h3>[% title %]</h3>
 

@@ -9,7 +9,9 @@
 <meta name="description" content="YAPC::NA 2015" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- OpenGraph for Facebook etc. -->
-[% IF title -%]
+[% IF ogtitle -%]
+<meta property="og:title" content="[% ogtitle | html %]">
+[% ELSIF title -%]
 <meta property="og:title" content="[% title | html %]">
 [%- ELSE -%]
 <meta property="og:title" content="YAPC::NA 2015">
@@ -25,13 +27,15 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@yapcna">
 <meta name="twitter:image" content="http://www.yapcna.org/yn2015/images/utah_ad.png">
-[%- IF title %]
-<meta property="twitter:title" content="[% title | html %]">
+[% IF ogtitle -%]
+<meta name="twitter:title" content="[% ogtitle | html %]">
+[%- ELSIF title %]
+<meta name="twitter:title" content="[% title | html %]">
 [%- ELSE -%]
-<meta property="twitter:title" content="YAPC::NA 2015">
+<meta name="twitter:title" content="YAPC::NA 2015">
 [%- END %]
 [%- IF description %]
-<meta property="twitter:description" content="[% description | truncate(80) | html %]">
+<meta name="twitter:description" content="[% description | truncate(80) | html %]">
 [% END -%]
 
 <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
