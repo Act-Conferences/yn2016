@@ -119,42 +119,58 @@
                 servers.'
         }
         dreamhost = {
-	    name = 'DreamHost'
-	    url  = 'http://www.dreamhost.com'
-	    logo = 'dh_logo-a-2014.png'
-	    description = '
-		<p>Since 1997 DreamHost has helped entrepreneurs and developers
-                the world over bring their dreams to life on the Internet. From domain
-                registrations to web hosting and even powerful cloud storage and computing
-                services, more than 400,000 customers trust DreamHost to be their online home.
-                Packed with unbelievable value, DreamHost is the best place to launch a blog,
-                website, or web application into the stratosphere. Learn more at
-                <a href="http://www.dreamhost.com">www.DreamHost.com</a></p>'
-	}
+            name = 'DreamHost'
+            url  = 'http://www.dreamhost.com'
+            logo = 'dh_logo-a-2014.png'
+            description = '
+            <p>Since 1997 DreamHost has helped entrepreneurs and developers
+                    the world over bring their dreams to life on the Internet. From domain
+                    registrations to web hosting and even powerful cloud storage and computing
+                    services, more than 400,000 customers trust DreamHost to be their online home.
+                    Packed with unbelievable value, DreamHost is the best place to launch a blog,
+                    website, or web application into the stratosphere. Learn more at
+                    <a href="http://www.dreamhost.com">www.DreamHost.com</a></p>'
+        }
         freeside = {
-	    name = 'Freeside'
-	    url  = 'http://freeside.biz'
-	    logo = 'freeside.png'
-	    description = '
-		    <p>Freeside Internet Services, Inc. is a small, distributed software company. We
-		    work with ISPs, VoIP providers and CLECs (small telcos). Our software provides
-		    billing, trouble ticketing (based on Request Tracker) and other operational and
-		    automation features. The software is written in Perl and licensed 100% freely /
-		    open-source.</p>
+            name = 'Freeside'
+            url  = 'http://freeside.biz'
+            logo = 'freeside.png'
+            description = '
+                <p>Freeside Internet Services, Inc. is a small, distributed software company. We
+                work with ISPs, VoIP providers and CLECs (small telcos). Our software provides
+                billing, trouble ticketing (based on Request Tracker) and other operational and
+                automation features. The software is written in Perl and licensed 100% freely /
+                open-source.</p>
 
-		    <p>We\'re active CPAN contributors, maintainers of Business::CreditCard,
-		    Business::OnlinePayment and assorted other modules.</p>
+                <p>We\'re active CPAN contributors, maintainers of Business::CreditCard,
+                Business::OnlinePayment and assorted other modules.</p>
 
-		    <p>We\'re looking to hire Perl developers with a passion for open-source. We value
-		    working code, work/life balance, communication and independence. We try to keep
-		    our developers\' lives as free as possible of things like meetings,
-		    over-process, and other obstacles.</p>'
+                <p>We\'re looking to hire Perl developers with a passion for open-source. We value
+                working code, work/life balance, communication and independence. We try to keep
+                our developers\' lives as free as possible of things like meetings,
+                over-process, and other obstacles.</p>'
         }   
         perl6 = {
-	    name = 'The Perl 6 Community'
-	    url   = 'http://perl6.org'
-	    logo  = '256px-Camelia.svg.png'
-	    description = ''
-	}
+            name = 'The Perl 6 Community'
+            url   = 'http://perl6.org'
+            logo  = '256px-Camelia.svg.png'
+            description = ''
+        }
+        ziprecruiter = {
+            name = 'ZipRecruiter'
+            url  = 'https://www.ziprecruiter.com/'
+            logo = 'ziprecruiter.png'
+            description = '
+                <p>ZipRecruiter offers the fastest and easiest way to get a job
+                listing in front of millions of candidates, and now includes
+                digital onboarding for all subscribers. </p>
+                <p>ZipRecruiter&quot;s web-based platform streamlines the
+                hiring process by enabling companies to post a job to 100+ job
+                boards with 1 click and to manage all applicants through a
+                simple online interface. By providing a central location for
+                finding, screening and tracking applicants, ZipRecruiter helps
+                employers make the best hiring decisions quickly and at a
+                fraction of the cost of traditional job boards.</p>'
+        }
     }
 %]
