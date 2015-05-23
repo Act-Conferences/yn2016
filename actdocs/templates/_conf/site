@@ -109,7 +109,7 @@
         pair = {
             name = 'pair Networks, Inc.'
             url  = 'http://www.pair.com'
-            logo = 'pairnetworks.jpg'
+            logo = 'pair-logo.svg'
             description = '
                 <p>pair Networks is a global Web hosting and domain name
                 registration company that has been providing reliable service
@@ -171,6 +171,25 @@
                 finding, screening and tracking applicants, ZipRecruiter helps
                 employers make the best hiring decisions quickly and at a
                 fraction of the cost of traditional job boards.</p>'
+        }
+        mediamath = {
+            name = 'MediaMath'
+            url  = 'http://www.mediamath.com'
+            logo = 'MediaMath_Logo_Border_CMYK.svg'
+            description = '
+                <p>MediaMath is a global technology company that&#39;s
+                revolutionizing traditional marketing and empowering marketers
+                to unleash the power of goal-based marketing at scale,
+                transparently across the enterprise. Our platform &mdash; the
+                TerminalOne Marketing Operating System - handles billions of
+                transactions every hour and hundreds of millions of internet
+                users every day, which means every solution must be built to
+                scale. Our breakthroughs create new marketplaces and solve
+                long-standing problems in an industry that is constantly
+                evolving. Our engineers are building the leading technology
+                platform to power the new digital marketing ecosystem, and we
+                are looking for driven, curious innovators to join our
+                team.</p>'
         }
     }
 %]
