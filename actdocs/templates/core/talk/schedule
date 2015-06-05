@@ -76,7 +76,7 @@
 <div class="table-responsive">
 <table border="0" class="table table-bordered">
 <thead>
- <tr class="header">
+ <tr class="active">
   <th>
    {{Time}}
   </th>
