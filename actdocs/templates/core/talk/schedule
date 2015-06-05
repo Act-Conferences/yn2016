@@ -74,7 +74,7 @@
 [% d = day %]
 <h2>[% date_format(d.replace('$', ' 00:00:00' ), 'date_full') | ucfirst %]</h2>
 <div class="table-responsive">
-<table border="0">
+<table border="0" class="table table-bordered">
 <thead>
  <tr class="header">
   <th>
