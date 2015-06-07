@@ -42,8 +42,9 @@
         <div class="row h3">YAPC::NA Details</div>
         <p><em>Dates:</em> [% site.event_date %]</p>
         <p><em>Location:</em> Salt Lake City, Utah (<a href="[% make_uri('location.html') %]">more information</a>)</p>
-        <p><em>Regular Cost:</em> <b>$250</b></p>
-        <p>Discounts and scholarships available for students and active or retired military.</p>
+        <p><strike><em>Regular Cost:</em> <b>$250</b></strike></p>
+        <p>YAPC::NA 2015 has <em>sold out</em>.   We'll see you next year!</p>
+<!--        <p>Discounts and scholarships available for students and active or retired military.</p>   -->
         <p><a href="[% make_uri('contact.html') %]">Contact us</a></p>
         [% IF global.request.user %]
             [% IF global.request.user.has_registered AND NOT global.request.user.has_paid  AND global.config.payment_open %]
@@ -51,7 +52,7 @@
             [% END %]
         [% ELSE %]
             [% IF global.config.payment_open %]
-                <a href="[% make_uri('purchase') %]">Purchase your event ticket</a>
+<!--                <a href="[% make_uri('purchase') %]">Purchase your event ticket</a> -->
             [% END %]
         [% END %]
 
