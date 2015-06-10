@@ -191,5 +191,35 @@
                 are looking for driven, curious innovators to join our
                 team.</p>'
         }
+        perlcareers = {
+            name = 'Perl Careers'
+            url  = 'http://perl.careers/'
+            logo = 'perlcareers logo_white.svg'
+            description = '
+                <p>Perl Careers is a Perl-focused recruitment consultancy, run
+                by a CPAN contributor with a recruitment background, rather
+                than by a non-technical person. I can understand the skills
+                you\'re looking to hire for, make sense of your GitHub profile,
+                and offer specific Perl-related career and salary advice. I am
+                very picky about only: recruiting for companies I\'d want to
+                work at; placing candidates who I\'d want to work with. I\'d love
+                to talk to you if you think you might be either.'
+        }
+        liquidweb = {
+            name = 'Liquid Web'
+            url  = 'https://www.liquidweb.com/'
+            logo = 'liquidweb-blk-lg.jpg'
+            description = '
+                <p>Liquid Web is a privately held, managed web hosting company
+                founded in 1997. The company owns and operates three data
+                center facilities located in Lansing, Michigan in addition to
+                having a software development office and a data center in
+                metropolitan Phoenix, Arizona. In 2014, the company also
+                launched development space in Ann Arbor, Michigan as well as
+                extending hosting operations to Europe in Amsterdam, NL in
+                2015. The rapidly expanding web host has been recognized
+                amongst INC Magazine\'s 5000 Fastest Growing Companies for eight
+                consecutive years, beginning in 2007.'
+        }
     }
 %]
