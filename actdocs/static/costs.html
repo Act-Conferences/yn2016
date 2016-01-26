@@ -1,0 +1,71 @@
+[% WRAPPER ui title = "Event Price" %]
+[% PROCESS _conf/main %]
+
+<div class="row"><div class="h1 col-xs-12">YAPC::NA::2015 is Sold Out.</div></div>
+
+<p>We have reached our maximum registration for 2015.   No additional entries will be sold.</p>
+
+<div class="row"><div class="h2 col-xs-12">Regular admission: $250</div></div>
+
+[% IF ! global.config.payment_open %]
+<p>Prices have not yet been set for this year&#39;s event.   We hope to have
+this information available soon.   We aim to provide the lowest possible cost
+event while still maintaining ground-breaking quality.</p>
+[% ELSE %]
+<h3>What you get:</h3>
+
+<ul>
+    <li>Admission to the three-day (Monday - Wednesday) main event, including keynotes, talks.</li>
+    <li>Opportunity to talk to Perl job recruiters</li>
+    <li>Access to dozens of CPAN authors and key Perl community members</li>
+    <li>Admission to Open-space forums, BOF's, and other great activities</li>
+</ul>
+
+<p>Advanced registration is required.</p>
+
+<h3>Student / Military scholarships</h3>
+
+<p>The Perl Foundation is pleased to offer YAPC::NA scholarships to the
+following categories of individuals:</p>
+
+<ul>
+<li>Anybody enrolled as a full-time student in high school or a degree granting academic institution.
+<li>Any active duty or retired military personnel
+<li>Immediate family of active duty or retired military personnel.
+</ul>
+
+<p>In all of the above cases, applicant must be able to provide a valid current
+ID card from the appropriate institution.  In cases where the ID card does not
+contain an expiration date, current will be considered any card issued no more
+than two years prior to the date of application.</p>
+
+<p>In order to apply, please scan your identification card  and email it along
+with a written request to admin@yapcna.org.  If your card includes a social
+security number or other private identification numbers, please blank that
+portion out. We only want to know that the Id is current and issued to you.
+You may be asked to produce the identification card again at check-in.</p>
+
+<p>Requests will be considered on a first-come, first-serve basis.    A maximum
+of 50 scholarships will be granted.   Successful applicants will receive a
+coupon code that may be used to purchase an event pass for the reduced cost of
+$50.</p>
+
+<p>Space is limited at YAPC and tickets will be sold until all available seats
+have been taken.  A successful scholarship application does not guarantee the
+awardee a spot at the event.</p>
+
+<p>All scholarship awardees must agree to comply with the YAPC Standards of
+Conduct policy.</p>
+
+
+<h3>Have questions?</h3>
+
+<ul>
+    <li>Please contact <a href="mailto:admin@yapcna.org">admin@yapcna.org</a> for more information.</li>
+</ul>
+
+<p>Space is limited for add-on classes.   <a href="[% make_uri('purchase') %]">Advanced registration</a> is required.</p>
+
+[% END %]
+[% END %]
+

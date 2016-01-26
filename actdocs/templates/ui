@@ -1,55 +1,92 @@
+[% PROCESS _conf/main %]
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
-
 <head>
-<!-- Document Metadata -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="[% global.request.language %]" />
-<!-- OpenId -->
-[% IF openid %]
-<link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
-[% END %]
-<!-- Atom news feed -->
+<meta name="keywords" content="yapcna yapc YAPC::NA 2015" />
+<meta name="description" content="YAPC::NA 2015" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- OpenGraph for Facebook etc. -->
+[% IF ogtitle -%]
+<meta property="og:title" content="[% ogtitle | html %]">
+[% ELSIF title -%]
+<meta property="og:title" content="[% title | html %]">
+[%- ELSE -%]
+<meta property="og:title" content="YAPC::NA 2015">
+[%- END %]
+<meta property="og:site_name" content="YAPC::NA 2015">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://www.yapcna.org/yn2015/images/utah_ad.png">
+[% IF description -%]
+<meta property="og:description" content="[% description | truncate(200) | html %]">
+[%- END %]
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@yapcna">
+<meta name="twitter:image" content="http://www.yapcna.org/yn2015/images/utah_ad.png">
+[% IF ogtitle -%]
+<meta name="twitter:title" content="[% ogtitle | html %]">
+[%- ELSIF title %]
+<meta name="twitter:title" content="[% title | html %]">
+[%- ELSE -%]
+<meta name="twitter:title" content="YAPC::NA 2015">
+[%- END %]
+[%- IF description %]
+<meta name="twitter:description" content="[% description | truncate(200) | html %]">
+[% END -%]
+
 <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
-      href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml" />
+      href="http://blog.yapcna.org/feed/atom/" />
+
+
+<link rel="stylesheet" href="[% make_uri( 'css/bootstrap.css' ) %]">
+<link rel="stylesheet" href="[% make_uri( 'css/main.css' ) %]">
+
+<script src="[% make_uri( 'js/vendor/modernizr-2.6.2.min.js' ) %]"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
 [%- IF title -%]<title>[% title  %]</title>[%- END -%]
-
-<!-- CSS Stylesheets -->
-<link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]" />
-<link rel="stylesheet" type="text/css" href="/css/act-base.css" />
-<link rel="stylesheet" type="text/css" href="/css/schedule.css" />
-
-<!-- JavaScript sugar -->
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/act.js"></script>
-
-<!-- Favorite icon -->
-<link rel="shortcut icon" type="image/png" href="/favicon.png" />
 </head>
-
 <body>
-[%- IF title -%]<h1>[% title  %]</h1>[%- END -%]
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<div id="wrapper">
+    [% PROCESS navbar %]
 
-  <div id="header">
-    <h1>Our Perl Workshop</h1>
-  </div>
+    <br />
+    <div class="container page-content">
+        [% content %]
+    </div>
 
-  <div id="menu">
-    [% PROCESS menu %]
-  </div>
+    <div class="container footer">
+        <div class="row">
+        <p>&nbsp; Copyright &copy; 1999-[% site.event_year %] Yet Another Perl Conference.</p>
+        </div>
+    </div>
 
-  <div id="content">
-    [% content %]
-  </div>
+    <script src="[% make_uri('js/bootstrap.min.js') %]"></script>
+    <script src="[% make_uri('js/plugins.js') %]"></script>
+    <script src="[% make_uri('js/main.js') %]"></script>
 
-  <div id="footer">
-    Powered by <a href="http://act.mongueurs.net/">Act</a> — A Conference Toolkit
-  | Running on <a href="http://www.freebsd.org">FreeBSD</a>
-  </div>
+    <script type="text/javascript" src="/js/act.js"></script>
+    <script type="text/javascript">
 
-</div>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-346453-3']);
+      _gaq.push(['_setDomainName', 'yapcna.org']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 
 </body>
 </html>

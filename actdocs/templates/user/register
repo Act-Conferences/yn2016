@@ -1,0 +1,59 @@
+[% WRAPPER ui title = loc('Registration') %]
+
+[% USE date %]
+[% IF date.now > end_date %]
+<p>
+ {{Sorry, this conference is over.}}
+</p>
+[% ELSE %]
+
+<p>
+ [% loc('To register to the <name> conference', global.conference.name) %]
+</p>
+
+<form role="form" method="POST" action="[% global.request.r.uri %]">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1" id="code" style="height: 450px; overflow:scroll; overflow-y:scroll; overflow-x:none; >
+            [% INCLUDE conduct %]
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+	    <a href="conduct.html" target="_blank">Link to this agreement.</a>
+	</div>
+    </div>
+
+<div class="checkbox">
+   <label> <input type="checkbox" id="agree"><b>I agree to the above <b>Code of Conduct</b>.</label>
+</div>
+
+<button type="submit" name= "join" id="join" disabled="disabled" value= "{{Join}} [% global.conference.name %]" class="btn btn-default">{{Join}} [% global.conference.name %]</button>
+</form>
+
+<script type="text/javascript">
+    window.onload = function() {
+        var code = document.getElementById("code");
+        var agree = document.getElementById("agree");
+        var join = document.getElementById("join");
+
+        // Set the focus to the code of conduct.
+        code.focus();
+
+        // Setup the click handler.
+        agree.onclick = function() {
+            if(agree.checked) {
+                // We can proceed.
+                join.disabled = false;
+            } else {
+                // No way.
+                join.disabled = true;
+            }
+        }
+    };
+</script>
+
+</center>
+
+[% END %]
+
+[% END %]

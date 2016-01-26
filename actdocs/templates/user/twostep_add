@@ -1,0 +1,21 @@
+[% WRAPPER ui title = loc("Confirmation required") %]
+
+<p>{{This operation requires a confirmation. Please enter your email address,}}</p>
+
+[% PROCESS error
+   msgs = {
+     ERR_EMAIL        => loc("You must enter your email"),
+     ERR_EMAIL_SYNTAX => loc("Your email address looks bogus."),
+  }
+%]
+
+<form method="POST" role="form" action="[% global.request.r.uri %]">
+
+<div class="form-group">
+    <label for="email">{{Email}}: </label>
+    <input class="form-control" type="text" name="email" value="[% email %]" />
+</div>
+<button type="submit" name= "twostepsubmit" value="OK" class="btn btn-default">OK</button>
+</form>
+
+[% END %]

@@ -1,0 +1,40 @@
+[% WRAPPER ui title = loc("Log in") %]
+
+<form role="form" method="POST" action="[% action %]">
+<input type="hidden" name="destination" value="[% destination %]">
+
+[% IF error;
+     WRAPPER error_ui;
+       loc('Incorrect login or password');
+     END;
+   END
+%]
+
+<div class="form-group">
+      <label for="login">{{Login}}</label>
+      <input class="form-control" type="text" name="credential_0" value="[% login %]"/>
+</div>
+
+<div class="form-group">
+      <label for="login">{{Password}}</label>
+      <input class="form-control" type="password" name="credential_1" value="[% login %]"/>
+</div>
+
+<div class="checkbox">
+   <label> <input type="checkbox" name="credential_2">{{Remember me on this computer}}</label>
+</div>
+
+<button type="submit" name= "join" value= "{{Submit}}" class="btn btn-default">{{Submit}}</button>
+ </form>
+
+<br>
+<p>Haven't registered yet?  Then  <a href="register">register yourself</a> first.</p>
+<p>[% loc('Forgot your password?', make_uri('changepwd')) %]</p>
+
+<p>
+<font size="-1">
+ [% loc('This site uses cookies to authenticate logged in users.', domain) %]
+</font>
+</p>
+
+[% END %]

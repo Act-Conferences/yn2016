@@ -1,0 +1,17 @@
+[% MACRO format_username(user)
+BLOCK;
+  IF user.pseudonymous;
+    user.nick_name;
+  ELSE;
+    "${user.first_name} ${user.last_name}";
+    " (${user.nick_name})" IF user.nick_name;
+  END;
+END %]
+
+[% WRAPPER ui title = title, description = abstract, ogtitle = format_username(user) _ ' - ' _ title %]
+
+<h3>[% title %]</h3>
+
+[% PROCESS core/talk/show %]
+
+[% END %]
