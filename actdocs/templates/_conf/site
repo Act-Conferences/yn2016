@@ -1,13 +1,13 @@
 [%
     site = {
-        event_name = '<span class="event-name"><span class="city">Salt Lake City</span>
+        event_name = '<span class="event-name"><span class="city">Orlando, FL</span>
             <span class="language">Perl</span>
             <span class="event">Conference</span></span>',
-        event_short_name = '<span class="event-name">YAPC::NA 2015</span></span>',
+        event_short_name = '<span class="event-name">YAPC::NA 2016</span></span>',
         event_date = '<span class="event-date"><span class="month">June</span>
-            <span class="day">8&ndash;10</span>
-            <span class="year">2015</span></span>',
-        event_year = '2015'
+            <span class="day">20&ndash;22</span>
+            <span class="year">2016</span></span>',
+        event_year = '2016'
             event_theme = '<span class="event-theme">UNDEF</span>',
 
         list_general  = 'yapc@pm.org',
@@ -20,67 +20,12 @@
         track_hard = 'advanced',
 
         ztp_name = 'From Zero to Perl',
-        moose_name = 'Intro to Moose',
-        peter_scott_name = 'Maintaining Code While Staying Sane',
     };
 
     site.event_name = site.event_name.replace('>\s+<', '> <');
     site.event_date = site.event_date.replace('>\s+<', '> <');
 
     site.sponsors = {
-        grant_street_group = {
-            name = 'Grant Street Group'
-            url  = 'http://grantstreet.com'
-            logo = 'gsg.png'
-            description = '
-                <p>Grant Street Group is a Software as a Service pioneer based
-                in Pittsburgh. We hosted the world&apos;s first online bond
-                auction in 1997. Since then, thousands of clients have used our
-                software to process financial transactions exceeding $12
-                trillion. Our most recent project is <a
-                href="http://te52.com">te52.com</a>, a cloud-based natural
-                language testing automation service.</p>
-
-                <p>Our projects leverage technologies in the fields of Natural
-                Language Processing, Large Scale computation, Distributed
-                Computing, Virtualization, and Financial Transactions.</p>
-
-                <p>We&apos;re big fans of Open Source technologies and
-                contribute to several Open Source projects. We are hiring local
-                and telecommuter Perl Developers. Visit
-                www.grantstreet.com/careers to learn more.</p>'
-        }
-        booking = {
-            name = 'Booking.com'
-            logo = 'booking.png'
-            url  = 'http://www.booking.com'
-            description = '
-                <p>Booking.com is an international success that build her
-                website on Perl. Booking.com, part of the Priceline Group
-                (Nasdaq: PCLN), is the world leader in booking accommodations
-                online. Each day, over 650,000 room nights are reserved on
-                Booking.com. Our IT Department focuses on development, scaling
-                and automation. We constantly challenge our current environment
-                to see how we can improve our business and go beyond our
-                current limits. Most of our tools are designed and built by us
-                with Open Source technologies. Booking.com runs one of the
-                world&apos;s largest Perl-powered websites and we offer a rapidly
-                evolving and dynamic environment.</p>'
-        }
-        cpanel = {
-            name = 'cPanel'
-            logo = 'cpanel.png'
-            url  = 'http://cpanel.net/'
-            description = '
-                <p>The cPanel & WHM software package is an easy-to-use control
-                panel that gives web hosts, and the website owners they serve,
-                the ability to quickly and easily manage their servers and
-                websites.  Developed in Perl and working in the SCRUM
-                development methodology, cPanel seeks highly motivated
-                development team members in our Houston location.   Visit
-                <a href=\'http://jobs.cpanel.net\'>http://jobs.cpanel.net</a> 
-                for open positions. </p>'
-        }
         bluehost = {
             name = 'Bluehost'
             url  = 'http://www.bluehost.com/'
@@ -105,121 +50,6 @@
                 24/7 award winning customer service. HostGator offers shared
                 hosting, VPS hosting, Dedicated servers, domain names, and
                 more.</p>'
-        }
-        pair = {
-            name = 'pair Networks, Inc.'
-            url  = 'http://www.pair.com'
-            logo = 'pair-logo.svg'
-            description = '
-                <p>pair Networks is a global Web hosting and domain name
-                registration company that has been providing reliable service
-                for over 18 years. People in over 150 countries around the
-                world choose us for our world class network; our responsive,
-                knowledgeable support specialists; and our secure and reliable
-                servers.'
-        }
-        dreamhost = {
-            name = 'DreamHost'
-            url  = 'http://www.dreamhost.com'
-            logo = 'dh_logo-a-2014.png'
-            description = '
-            <p>Since 1997 DreamHost has helped entrepreneurs and developers
-                    the world over bring their dreams to life on the Internet. From domain
-                    registrations to web hosting and even powerful cloud storage and computing
-                    services, more than 400,000 customers trust DreamHost to be their online home.
-                    Packed with unbelievable value, DreamHost is the best place to launch a blog,
-                    website, or web application into the stratosphere. Learn more at
-                    <a href="http://www.dreamhost.com">www.DreamHost.com</a></p>'
-        }
-        freeside = {
-            name = 'Freeside'
-            url  = 'http://freeside.biz'
-            logo = 'freeside.png'
-            description = '
-                <p>Freeside Internet Services, Inc. is a small, distributed software company. We
-                work with ISPs, VoIP providers and CLECs (small telcos). Our software provides
-                billing, trouble ticketing (based on Request Tracker) and other operational and
-                automation features. The software is written in Perl and licensed 100% freely /
-                open-source.</p>
-
-                <p>We\'re active CPAN contributors, maintainers of Business::CreditCard,
-                Business::OnlinePayment and assorted other modules.</p>
-
-                <p>We\'re looking to hire Perl developers with a passion for open-source. We value
-                working code, work/life balance, communication and independence. We try to keep
-                our developers\' lives as free as possible of things like meetings,
-                over-process, and other obstacles.</p>'
-        }   
-        perl6 = {
-            name = 'The Perl 6 Community'
-            url   = 'http://perl6.org'
-            logo  = '256px-Camelia.svg.png'
-            description = ''
-        }
-        ziprecruiter = {
-            name = 'ZipRecruiter'
-            url  = 'https://www.ziprecruiter.com/'
-            logo = 'ziprecruiter.png'
-            description = '
-                <p>ZipRecruiter offers the fastest and easiest way to get a job
-                listing in front of millions of candidates, and now includes
-                digital onboarding for all subscribers. </p>
-                <p>ZipRecruiter&quot;s web-based platform streamlines the
-                hiring process by enabling companies to post a job to 100+ job
-                boards with 1 click and to manage all applicants through a
-                simple online interface. By providing a central location for
-                finding, screening and tracking applicants, ZipRecruiter helps
-                employers make the best hiring decisions quickly and at a
-                fraction of the cost of traditional job boards.</p>'
-        }
-        mediamath = {
-            name = 'MediaMath'
-            url  = 'http://www.mediamath.com'
-            logo = 'MediaMath_Logo_Border_CMYK.svg'
-            description = '
-                <p>MediaMath is a global technology company that&#39;s
-                revolutionizing traditional marketing and empowering marketers
-                to unleash the power of goal-based marketing at scale,
-                transparently across the enterprise. Our platform &mdash; the
-                TerminalOne Marketing Operating System - handles billions of
-                transactions every hour and hundreds of millions of internet
-                users every day, which means every solution must be built to
-                scale. Our breakthroughs create new marketplaces and solve
-                long-standing problems in an industry that is constantly
-                evolving. Our engineers are building the leading technology
-                platform to power the new digital marketing ecosystem, and we
-                are looking for driven, curious innovators to join our
-                team.</p>'
-        }
-        perlcareers = {
-            name = 'Perl Careers'
-            url  = 'http://perl.careers/'
-            logo = 'perlcareers logo_white.svg'
-            description = '
-                <p>Perl Careers is a Perl-focused recruitment consultancy, run
-                by a CPAN contributor with a recruitment background, rather
-                than by a non-technical person. I can understand the skills
-                you\'re looking to hire for, make sense of your GitHub profile,
-                and offer specific Perl-related career and salary advice. I am
-                very picky about only: recruiting for companies I\'d want to
-                work at; placing candidates who I\'d want to work with. I\'d love
-                to talk to you if you think you might be either.'
-        }
-        liquidweb = {
-            name = 'Liquid Web'
-            url  = 'https://www.liquidweb.com/'
-            logo = 'liquidweb-blk-lg.jpg'
-            description = '
-                <p>Liquid Web is a privately held, managed web hosting company
-                founded in 1997. The company owns and operates three data
-                center facilities located in Lansing, Michigan in addition to
-                having a software development office and a data center in
-                metropolitan Phoenix, Arizona. In 2014, the company also
-                launched development space in Ann Arbor, Michigan as well as
-                extending hosting operations to Europe in Amsterdam, NL in
-                2015. The rapidly expanding web host has been recognized
-                amongst INC Magazine\'s 5000 Fastest Growing Companies for eight
-                consecutive years, beginning in 2007.'
         }
     }
 %]

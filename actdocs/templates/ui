@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="[% global.request.language %]" />
-<meta name="keywords" content="yapcna yapc YAPC::NA 2015" />
-<meta name="description" content="YAPC::NA 2015" />
+<meta name="keywords" content="yapcna yapc YAPC::NA 2016" />
+<meta name="description" content="YAPC::NA 2016" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- OpenGraph for Facebook etc. -->
 [% IF ogtitle -%]
@@ -14,11 +14,11 @@
 [% ELSIF title -%]
 <meta property="og:title" content="[% title | html %]">
 [%- ELSE -%]
-<meta property="og:title" content="YAPC::NA 2015">
+<meta property="og:title" content="YAPC::NA 2016">
 [%- END %]
-<meta property="og:site_name" content="YAPC::NA 2015">
+<meta property="og:site_name" content="YAPC::NA 2016">
 <meta property="og:type" content="website">
-<meta property="og:image" content="http://www.yapcna.org/yn2015/images/utah_ad.png">
+<meta property="og:image" content="http://www.yapcna.org/yn2016/images/florida_night.jpg">
 [% IF description -%]
 <meta property="og:description" content="[% description | truncate(200) | html %]">
 [%- END %]
@@ -26,13 +26,13 @@
 <!-- Twitter card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@yapcna">
-<meta name="twitter:image" content="http://www.yapcna.org/yn2015/images/utah_ad.png">
+<meta name="twitter:image" content="http://www.yapcna.org/yn2016/images/florida_night.png">
 [% IF ogtitle -%]
 <meta name="twitter:title" content="[% ogtitle | html %]">
 [%- ELSIF title %]
 <meta name="twitter:title" content="[% title | html %]">
 [%- ELSE -%]
-<meta name="twitter:title" content="YAPC::NA 2015">
+<meta name="twitter:title" content="YAPC::NA 2016">
 [%- END %]
 [%- IF description %]
 <meta name="twitter:description" content="[% description | truncate(200) | html %]">
