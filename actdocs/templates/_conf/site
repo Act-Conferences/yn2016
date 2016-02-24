@@ -39,17 +39,5 @@
                 are pushing boundaries to deliver the promise of the internet
                 to more people than ever.</p>'
         }
-        hostgator = {
-            name = 'HostGator'
-            url  = 'http://www.hostgator.com/'
-            logo = 'hostgator.jpg'
-            description = '
-                <p>HostGator.com provides a full suite of web-based solutions to
-                small businesses, developers and individuals around the globe.
-                Since 2002 HostGator has been providing premium web hosting and
-                24/7 award winning customer service. HostGator offers shared
-                hosting, VPS hosting, Dedicated servers, domain names, and
-                more.</p>'
-        }
     }
 %]
