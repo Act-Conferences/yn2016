@@ -77,7 +77,7 @@
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-346453-3']);
+      _gaq.push(['_setAccount', 'UA-29670164-1']);
       _gaq.push(['_setDomainName', 'yapcna.org']);
       _gaq.push(['_trackPageview']);
 
