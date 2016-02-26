@@ -19,6 +19,7 @@
                 [% PROCESS menus/schedule %]
                 [% PROCESS menus/admin %]
                 [% PROCESS menus/user %]
+                <li><a href="[% make_uri('newtalk') %]">Submit a talk</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 [% PROCESS menus/past_confs %]
