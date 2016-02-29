@@ -65,7 +65,7 @@
 
     <div class="container footer">
         <div class="row">
-        <p>&nbsp; Copyright &copy; 1999-[% site.event_year %] Yet Another Perl Conference.</p>
+        <p>&nbsp; Copyright &copy; 1999-[% site.event_year %] The Perl Foundation.   This event is not affiliated with O'Reilly Media.</p>
         </div>
     </div>
 
