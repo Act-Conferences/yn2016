@@ -19,7 +19,9 @@
                 [% PROCESS menus/schedule %]
                 [% PROCESS menus/admin %]
                 [% PROCESS menus/user %]
+[% IF global.config.talks_submissions_open %]
                 <li><a href="[% make_uri('newtalk') %]">Submit a talk</a></li>
+[% END %]
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 [% PROCESS menus/past_confs %]
