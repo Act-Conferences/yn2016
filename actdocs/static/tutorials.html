@@ -19,18 +19,180 @@
 <div class="row">
     <div class="h1 col-xs-12">Tutorials</div>
 </div>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="masters-info">
+            <p class="masters-cat">Friday, June 19th:</p>
+            <ul class="masters-item">
+                <li><a href="#Perl6">Perl 6: Transparadigm Programming 101</a></li>
+                <li><a href="#Dancer">Programming the web with Dancer</a></li>
+                <li><a href="#FZTP">From Zero to Perl 5</a></li>
+            </ul>
+            <p class="masters-cat">Thursday, June 23rd:</p>
+            <ul class="masters-item">
+                <li><a href="#Functional">Thinking Functionally in Perl 5 &amp; 6</a></li>
+                <li><a href="#Moose">Introduction to Moose</a></li>
+            </ul>
+            <p class="masters-cat">Friday, June 24th:</p>
+            <ul class="masters-item">
+                <li><a href="#Presentation">Presentation Aikido</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hidden-xs col-sm-6 col-md-8">
+        <p>Tutorials are a great way to up your Perl game with some world-class
+        trainers!    These tutorials range all the way from beginner skill
+        level to master class.</p>
+        <p>Unless otherwise noted, the tutorials are full day courses.  Each
+        tutorial does have an additional cost, noted in the descriptions below
+        and pre-registration is required.</p>   
+    </div>
+</div>
 
 <div class="row">
-    <div class="h2 col-xs-12">From Zero to Perl</div>
+    <div class="h2 col-xs-12">Perl 6: Transparadigm Programming 101</div>
+    <a name="Perl6"></a>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-5 col-md-3">
+        <div class="masters-info">
+            <span class="masters-cat">Date:</span>
+            <span class="masters-item">Friday June 19, 2016</span>
+            <span class="masters-cat">Instructor:</span>
+            <span class="masters-item">Damian Conway</span>
+            <span class="masters-cat">Cost:</span>
+            <span class="masters-item">$75</span>
+            [% IF 0 %]
+            <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% ELSE %]
+            [% IF global.config.registration_open %]
+            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+            [% END %]
+            [% END %]
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-7 col-md-9">
+        <div class="hideshow">
+            <p>SHORT DESCRIPTION</p>
+
+            <a class="hideshow-reveal" href="#Perl6">Show more</a>
+            <div class="hideshow-hidden" style="display: none">
+                <h5>Course outline</h5>
+
+
+                <h5>Required materials</h5>
+
+                <h5>Speaker Bio</h5>
+                <a class="hideshow-hide" href="#Perl6">Show less</a>
+
+            </div> <!-- END hidden -->
+        </div> <!-- END hideshow -->
+    </div> <!-- END Column -->
+</div> <!-- END row -->
+
+<div class="row">
+    <div class="h2 col-xs-12">Programming the web with Dancer</div>
+    <a name="Dancer"></a>
 </div>
  <div class="row">
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Sunday, June 7th 2015<br>
+            <span class="masters-item">Thursday, June 11<br>
+                                       (One full day)</span>
+            <span class="masters-cat">Instructors:</span>
+            <span class="masters-item">Sawyer X<br>
+                                       Mickey Nasriachi</span>
+            <span class="masters-cat">Cost:</span>
+            <span class="masters-item">$75</span>
+                                      $50 (Thanks to Booking.com)</span>
+            [% IF global.config.registration_open %]
+            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+            [% END %]
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-7 col-md-9">
+        <div class="hideshow">
+            <p>Through a sponsorship from Booking.com, we are pleased to be
+            able to offer this class at a 30% discount to all participants!</p>
+
+            <p>Dancer is a lightweight featureful beautiful web framework in Perl.
+            The class covers how Dancer works, how to use it effectively, and
+            various tricks and hints for a successful and productive usage of it
+            in production environment, whether it is in a major company, a start
+            up, or your personal website.</p>
+
+            <h5>Class outline</h5>
+
+            <ol>
+                <li> Dancer 1 vs. Dancer 2
+                <li> Dancer2 syntax
+                <li> Writing tests
+                <li> Middlewares (mounting, Plack::Builder)
+                <li> Deployment
+                <li> Best practices
+                <li> Tips and tricks
+            </ol>
+
+            <a class="hideshow-reveal" href="#Dancer">Show more</a>
+            <div class="hideshow-hidden" style="display: none">
+
+                <h5>Intended audience</h5>
+
+                <p>Perl beginner programmers, web beginners and web intermediates</p>
+
+                <p>Familiarity with Perl and at least a brief understanding of web programming is required.</p>
+
+                <h5>Required materials</h5>
+
+                <p>Each student must bring:</p>
+
+                <ul>
+                <li> Laptop - mandatory
+                <li> Perl + Editor - mandatory
+                <li> Preinstalled modules:<br>
+                 - Dancer2 >=0.159000
+                  - Starman
+                   - Test::More >= 0.98
+                    - HTTP::Request
+                <li> Git
+                <li> cURL (if Linux/Mac - not essential)
+                </ul>
+
+                <h5>Speaker Biography</h5>
+
+                <p>Sawyer X has been a core developer of Dancer probably too quickly
+                after it came into the world. He has led Dancer and now leads the new
+                branch of Dancer: Dancer2. He's the current project leader and main
+                developer.</p>
+
+                <p>Mickey is a core developer in Dancer2 and has provided some of the
+                bigger changes including major overhaults of core components, along
+                with massive cleanups of the inner workings of Dancer.</p>
+
+                <p>Both Sawyer and Mickey currently work on Dancer (amongst other
+                projects) at Booking.com.</p>
+
+
+                <a class="hideshow-hide" href="#Dancer">Show less</a>
+            </div> <!-- END hidden -->
+        </div> <!-- END hideshow -->
+
+    </div> <!-- END Column -->
+</div> <!-- END row -->
+ 
+<div class="row">
+    <div class="h2 col-xs-12">From Zero to Perl 5</div>
+    <a name="FZTP"></a>
+</div>
+ <div class="row">
+    <div class="col-xs-12 col-sm-5 col-md-3">
+        <div class="masters-info">
+            <span class="masters-cat">Date:</span>
+            <span class="masters-item">Sunday, June 19th 2016<br>
                                        (One full day)</span>
             <span class="masters-cat">Instructor:</span>
-            <span class="masters-item">Sawyer X</span>
+            <span class="masters-item">John Anderson</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$75</span>
             [% IF global.config.registration_open %]
@@ -42,7 +204,7 @@
         <div class="hideshow">
             <p> YAPC::NA is proud to announce "From Zero to Perl," a special
             course for programmers new to the Perl programming language, to be
-            taught by Sawyer X on Sunday the 7th June.</p>
+            taught by John "Genehack" Anderson on Sunday the 19th of June.</p>
 
                 <p>The "Zero To Perl" course is designed to introduce programmers of any
                 experience level to Perl 5 programming. (Non-programmers are welcomed
@@ -51,7 +213,7 @@
                 development, text processing, bioinformatics, database manipulation,
                 systems administration, devops, and more.</p>
 
-            <a class="hideshow-reveal" href="#">Show more</a>
+            <a class="hideshow-reveal" href="#FZTP">Show more</a>
             <div class="hideshow-hidden" style="display: none">
                 <p>The course will cover basic Perl syntax, including variables and data
                 structures, flow control, functions, reading and writing files, and
@@ -73,14 +235,49 @@
 
                 <h5>About the Instructor:</h5>
 
-                <p>Sawyer X is an experienced Perl programmer with a passion
-                for guiding and mentoring. He's ran a successful Perl beginners
-                course and participates in outreach programs for beginners. His
-                involvement with projects extends beyond the technical
-                contribution and aims at providing a good environment for
-                others while helping new-comers as they make their first steps
-                </p>
-                <a class="hideshow-hide" href="#">Show less</a>
+                <p>FIX ME!</p>
+
+                <a class="hideshow-hide" href="#FZTP">Show less</a>
+            </div> <!-- END hidden -->
+        </div> <!-- END hideshow -->
+    </div> <!-- END Column -->
+</div> <!-- END row -->
+
+<div class="row">
+    <div class="h2 col-xs-12">Thinking Functionally in Perl 5 &amp; 6</div>
+    <a name="Functional"></a>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-5 col-md-3">
+        <div class="masters-info">
+            <span class="masters-cat">Date:</span>
+            <span class="masters-item">Thursday June 23, 2016</span>
+            <span class="masters-cat">Instructor:</span>
+            <span class="masters-item">Damian Conway</span>
+            <span class="masters-cat">Cost:</span>
+            <span class="masters-item">$175</span>
+            [% IF global.config.registration_open %]
+            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+            [% END %]
+            [% IF 0 %]
+            <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% END %]
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-7 col-md-9">
+        <div class="hideshow">
+            <p>SHORT DESCRIPTION</p>
+
+            <a class="hideshow-reveal" href="#Functional">Show more</a>
+            <div class="hideshow-hidden" style="display: none">
+                <h5>Course outline</h5>
+
+
+                <h5>Required materials</h5>
+
+                <h5>Speaker Bio</h5>
+                <a class="hideshow-hide" href="#Functional">Show less</a>
+
             </div> <!-- END hidden -->
         </div> <!-- END hideshow -->
     </div> <!-- END Column -->
@@ -100,7 +297,9 @@
             <span class="masters-item">Dave Rolsky</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$175</span>
-            <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% IF global.config.registration_open %]
+            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+            [% END %]
         </div>
     </div>
     <div class="col-xs-12 col-sm-7 col-md-9">
@@ -192,6 +391,47 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="h2 col-xs-12">Presentation Aikido</div>
+    <a name="Presentation"></a>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-5 col-md-3">
+        <div class="masters-info">
+            <span class="masters-cat">Date:</span>
+            <span class="masters-item">Friday June 19, 2016</span>
+            <span class="masters-cat">Instructor:</span>
+            <span class="masters-item">NAME</span>
+            <span class="masters-cat">Cost:</span>
+            <span class="masters-item">$AMOUNT</span>
+            [% IF global.config.registration_open %]
+            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+            [% END %]
+            [% IF 0 %]
+            <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% END %]
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-7 col-md-9">
+        <div class="hideshow">
+            <p>SHORT DESCRIPTION</p>
+
+            <a class="hideshow-reveal" href="#Presentation">Show more</a>
+            <div class="hideshow-hidden" style="display: none">
+                <h5>Course outline</h5>
+
+
+                <h5>Required materials</h5>
+
+                <h5>Speaker Bio</h5>
+                <a class="hideshow-hide" href="#Presentation">Show less</a>
+
+            </div> <!-- END hidden -->
+        </div> <!-- END hideshow -->
+    </div> <!-- END Column -->
+</div> <!-- END row -->
+
+[% IF 0 %]
 <div class="row">
     <div class="h2 col-xs-12">Introduction to Go</div>
     <a name="Go"></a>
@@ -297,237 +537,45 @@
         </div> <!-- END hideshow -->
     </div>
 </div>
+[% END %]
 
 <div class="row">
-    <div class="h2 col-xs-12">Programming the web with Dancer</div>
-    <a name="Dancer"></a>
+    <div class="h2 col-xs-12">COURSE TITLE</div>
+    <a name="TAG"></a>
 </div>
- <div class="row">
+<div class="row">
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Thursday, June 11<br>
-                                       (One full day)</span>
-            <span class="masters-cat">Instructors:</span>
-            <span class="masters-item">Sawyer X<br>
-                                       Mickey Nasriachi</span>
+            <span class="masters-item">Friday June 19, 2016</span>
+            <span class="masters-cat">Instructor:</span>
+            <span class="masters-item">NAME</span>
             <span class="masters-cat">Cost:</span>
-            <span class="masters-item"><strike>$75</strike><br>
-                                      $50 (Thanks to Booking.com)</span>
+            <span class="masters-item">$AMOUNT</span>
             [% IF global.config.registration_open %]
             <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+            [% END %]
+            [% IF 0 %]
+            <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
             [% END %]
         </div>
     </div>
     <div class="col-xs-12 col-sm-7 col-md-9">
         <div class="hideshow">
-            <p>Through a sponsorship from Booking.com, we are pleased to be
-            able to offer this class at a 30% discount to all participants!</p>
+            <p>SHORT DESCRIPTION</p>
 
-            <p>Dancer is a lightweight featureful beautiful web framework in Perl.
-            The class covers how Dancer works, how to use it effectively, and
-            various tricks and hints for a successful and productive usage of it
-            in production environment, whether it is in a major company, a start
-            up, or your personal website.</p>
-
-            <h5>Class outline</h5>
-
-            <ol>
-                <li> Dancer 1 vs. Dancer 2
-                <li> Dancer2 syntax
-                <li> Writing tests
-                <li> Middlewares (mounting, Plack::Builder)
-                <li> Deployment
-                <li> Best practices
-                <li> Tips and tricks
-            </ol>
-
-            <a class="hideshow-reveal" href="#Dancer">Show more</a>
+            <a class="hideshow-reveal" href="#TAG">Show more</a>
             <div class="hideshow-hidden" style="display: none">
+                <h5>Course outline</h5>
 
-                <h5>Intended audience</h5>
-
-                <p>Perl beginner programmers, web beginners and web intermediates</p>
-
-                <p>Familiarity with Perl and at least a brief understanding of web programming is required.</p>
 
                 <h5>Required materials</h5>
 
-                <p>Each student must bring:</p>
+                <h5>Speaker Bio</h5>
+                <a class="hideshow-hide" href="#TAG">Show less</a>
 
-                <ul>
-                <li> Laptop - mandatory
-                <li> Perl + Editor - mandatory
-                <li> Preinstalled modules:<br>
-                 - Dancer2 >=0.159000
-                  - Starman
-                   - Test::More >= 0.98
-                    - HTTP::Request
-                <li> Git
-                <li> cURL (if Linux/Mac - not essential)
-                </ul>
-
-                <h5>Speaker Biography</h5>
-
-                <p>Sawyer X has been a core developer of Dancer probably too quickly
-                after it came into the world. He has led Dancer and now leads the new
-                branch of Dancer: Dancer2. He's the current project leader and main
-                developer.</p>
-
-                <p>Mickey is a core developer in Dancer2 and has provided some of the
-                bigger changes including major overhaults of core components, along
-                with massive cleanups of the inner workings of Dancer.</p>
-
-                <p>Both Sawyer and Mickey currently work on Dancer (amongst other
-                projects) at Booking.com.</p>
-
-
-                <a class="hideshow-hide" href="#Dancer">Show less</a>
             </div> <!-- END hidden -->
         </div> <!-- END hideshow -->
-
-    </div> <!-- END Column -->
-</div> <!-- END row -->
- 
-
-<div class="row">
-    <div class="h2 col-xs-12">Practical Career Development for Perl Developers</div>
-    <a name="Career"></a>
-</div>
- <div class="row">
-    <div class="col-xs-12 col-sm-5 col-md-3">
-        <div class="masters-info">
-            <span class="masters-cat">Date:</span>
-            <span class="masters-item">Friday June 12, 2015.<br>
-                                       (half day course)</span>
-            <span class="masters-cat">Instructor:</span>
-            <span class="masters-item">Peter Sergeant</span>
-            <span class="masters-cat">Cost:</span>
-            <span class="masters-item">$100</span>
-            [% IF global.config.registration_open %]
-            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
-            [% END %]
-        </div>
-    </div>
-    <div class="col-xs-12 col-sm-7 col-md-9">
-        <div class="hideshow">
-            <p>This course is based on a similar talk by the same speaker at the London Perl
-            Workshop this year:  "How to write a Developer R&eacute;sum&eacute; that will get you
-            hired" (<a href="http://bit.ly/1yAqK9E">Slideshare</a>.)</p>
-
-            <p>"Practical Career Development for Perl Developers" is a half-day interactive
-            session for Perl developers who are interested in finding out more about how to
-            strengthen their r&eacute;sum&eacute; and plot what the next 5 to 10 years of their career
-            should look like.</p>
-
-            <h5>Course outline</h5>
-
-            <ul>
-              <li>What makes a good r&eacute;sum&eacute;
-              <li>Review attendee r&eacute;sum&eacute;s as a group based on best practices
-              <li>Technical interview preparation, followed by group practice
-              <li>Putting together a longer-term career plan, side-projects, open-source contributions which will help, common areas missing from r&eacute;sum&eacute;s and how to fill those.
-            </ul>
-
-            <p>Attendees are encouraged to bring a few printed copies of their r&eacute;sum&eacute; for the interactive sessions.</p>
-
-
-            <h5>Speaker Bio</h5>
-
-            My name is Peter Sergeant, and I've been a Perl programmer since 1998
-            (<a href="http://search.cpan.org/~sargie/">http://search.cpan.org/~sargie/</a>).
-
-            But I've not just been a programmer. I've been a contractor and freelancer,
-            seeking out small and large pieces of work through endless client meetings;
-            I've been CTO at a mid-size company with 50 Perl developers; I've worked
-            fulltime as a self-development coach; I've been involved in technical
-            interviewing with many clients and employers; and I run <a href="http://perl.careers/">http://perl.careers/</a>, a
-            London-based Perl recruitment agency.
-        </div> <!-- END hideshow -->
-    </div> <!-- END Column -->
-</div> <!-- END row -->
-
-<div class="row">
-    <div class="h2 col-xs-12">Web Application Development using Perl, HTML5, CSS3, and JavaScript</div>
-    <a name="WebApp"></a>
-</div>
- <div class="row">
-    <div class="col-xs-12 col-sm-5 col-md-3">
-        <div class="masters-info">
-            <span class="masters-cat">Date:</span>
-            <span class="masters-item">Thursday, June 11 and Friday June 12, 2015.<br>
-                                       (2 day course)</span>
-            <span class="masters-cat">Instructor:</span>
-            <span class="masters-item">Gabor Szabo</span>
-            <span class="masters-cat">Class cancelled by instructor</span>
-	</div>
-    </div>
-    <div class="col-xs-12 col-sm-7 col-md-9">
-        <div class="hideshow">
-
-        <p>We are sorry to announce that this class has been cancelled by the instructor.</p>
-
-        <a class="hideshow-reveal" href="#WebApp">Show more</a>
-        <div class="hideshow-hidden" style="display: none">
-        <p>The primary focus of this course is client-side web development.</p>
-        
-        <p>You are going to learn how to create a mobile-enabled, responsive web
-        application using the following pieces of technology:
-        HTML5/CSS3/JavaScript, <a href="http://getbootstrap.com/">Twitter Bootstrap</a>,
-        <a href="http://handlebarsjs.com/">Handlebars</a>, and <a 
-        href="https://angularjs.org/">AngularJS</a> on the front-end.</p>
-
-        <p>We are also going to use <a href="https://www.mongodb.org/">MongoDB</a> and
-        <a href="http://perldancer.org/">Perl Dancer 2</a> on the server.</p>
-
-            <h5>Class Description</h5>
-
-        <p>At the beginning of the course we are going to introduce the
-        basics of HTML, CSS and JavaScript.  We'll touch on some of the
-        features that are usually mentioned as HTML5 some of which are
-        actually part of JavaScript.</p>
-
-        <p>Then we are going to take an already existing web-site that
-        provides an API sending data formatted as JSON, and we are
-        going to write a single-page client-side application for it.</p>
-
-        <p>Finally we are going to build a small server-side
-        application using Perl Dancer 2 and MongoDB.</p>
-
-        <h5>Audience</h5>
-
-        <p>This course is for you if from time to time you need to
-        build internal web applications, or if you'd like to convert a
-        CGI based application to modern technologies, or if you just
-        want to be the next Twitter or Facebook.</p></p></p></p>
-
-        <p>The course is 2 days long.</p>
-
-        <p>Participants are expected at least intermediate knowledge of
-        Perl, Python, Ruby, PHP, or some other high-level language. As
-        a minimum they are expected to understand arrays, hashes
-        (called dictionaries in Python and associative arrays in PHP).</p>
-
-        <p>The students will get the training material in PDF format
-        and they will get plenty of example files. They are expected to
-        bring their own computer running Linux, Unix, OSX, or MS
-        Windows.  More specific instructions will be given a few days
-        prior to the training class.</p>
-
-        <h5>About the Speaker</h5>
-
-                <p>Gabor has been using Perl since 1995 and teaching it since 2000. He has given
-                Master classes at several previous Perl conferences. Both in North America and in Europe.
-                Gabor runs the Perl Weekly newsletter, the Perl Maven web sites and the Code Maven web site.
-                He is the author and maintainer of several Perl modules. He is one of the contributors
-                of MetaCPAN.
-
-                <p><a href="http://szabgab.com/about.html">http://szabgab.com/about.html</a></p>
-
-                <a class="hideshow-hide" href="#WebApp">Show less</a>
-            </div> <!-- END hidden -->
-        </div> <!-- END hideshow -->
-
     </div> <!-- END Column -->
 </div> <!-- END row -->
 
