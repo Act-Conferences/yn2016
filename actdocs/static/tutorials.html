@@ -22,18 +22,18 @@
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="masters-info">
-            <p class="masters-cat">Friday, June 19th:</p>
+            <p class="masters-cat">Friday, June 19<sup>th</sup>:</p>
             <ul class="masters-item">
                 <li><a href="#Perl6">Perl 6: Transparadigm Programming 101</a></li>
                 <li><a href="#Dancer">Programming the web with Dancer</a></li>
                 <li><a href="#FZTP">From Zero to Perl 5</a></li>
             </ul>
-            <p class="masters-cat">Thursday, June 23rd:</p>
+            <p class="masters-cat">Thursday, June 23<sup>rd</sup>:</p>
             <ul class="masters-item">
                 <li><a href="#Functional">Thinking Functionally in Perl 5 &amp; 6</a></li>
                 <li><a href="#Moose">Introduction to Moose</a></li>
             </ul>
-            <p class="masters-cat">Friday, June 24th:</p>
+            <p class="masters-cat">Friday, June 24<sup>th</sup>:</p>
             <ul class="masters-item">
                 <li><a href="#Presentation">Presentation Aikido</a></li>
             </ul>
@@ -57,7 +57,7 @@
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Friday June 19, 2016</span>
+            <span class="masters-item">Friday June 19<sup>th</sup> 2016<br>(One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">Damian Conway</span>
             <span class="masters-cat">Cost:</span>
@@ -98,24 +98,24 @@
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Thursday, June 11<br>
+            <span class="masters-item">Sunday, June 19<sup>th</sup> 2016<br>
                                        (One full day)</span>
             <span class="masters-cat">Instructors:</span>
             <span class="masters-item">Sawyer X<br>
                                        Mickey Nasriachi</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$75</span>
-                                      $50 (Thanks to Booking.com)</span>
-            [% IF global.config.registration_open %]
-            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+            [% IF 0 %]
+            <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% ELSE %]
+                [% IF global.config.registration_open %]
+                <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+                [% END %]
             [% END %]
         </div>
     </div>
     <div class="col-xs-12 col-sm-7 col-md-9">
         <div class="hideshow">
-            <p>Through a sponsorship from Booking.com, we are pleased to be
-            able to offer this class at a 30% discount to all participants!</p>
-
             <p>Dancer is a lightweight featureful beautiful web framework in Perl.
             The class covers how Dancer works, how to use it effectively, and
             various tricks and hints for a successful and productive usage of it
@@ -189,14 +189,18 @@
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Sunday, June 19th 2016<br>
+            <span class="masters-item">Sunday, June 19<sup>th</sup> 2016<br>
                                        (One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">John Anderson</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$75</span>
-            [% IF global.config.registration_open %]
-            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+            [% IF 0 %]
+            <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% ELSE %]
+                [% IF global.config.registration_open %]
+                <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+                [% END %]
             [% END %]
         </div>
     </div>
@@ -251,16 +255,17 @@
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Thursday June 23, 2016</span>
+            <span class="masters-item">Thursday, June 23<sup>rd</sup> 2016<br>(One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">Damian Conway</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$175</span>
-            [% IF global.config.registration_open %]
-            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
-            [% END %]
             [% IF 0 %]
             <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% ELSE %]
+                [% IF global.config.registration_open %]
+                <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+                [% END %]
             [% END %]
         </div>
     </div>
@@ -291,14 +296,18 @@
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Sunday, June 7th 2015<br>
+            <span class="masters-item">Thursday, June 23<sup>rd</sup> 2016<br>
                                        (One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">Dave Rolsky</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$175</span>
-            [% IF global.config.registration_open %]
-            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+            [% IF 0 %]
+            <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% ELSE %]
+                [% IF global.config.registration_open %]
+                <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+                [% END %]
             [% END %]
         </div>
     </div>
@@ -399,16 +408,17 @@
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Friday June 19, 2016</span>
+            <span class="masters-item">Friday, June 24<sup>th</sup> 2016<br>(One full day)</span>
             <span class="masters-cat">Instructor:</span>
-            <span class="masters-item">NAME</span>
+            <span class="masters-item">Damian Conway</span>
             <span class="masters-cat">Cost:</span>
-            <span class="masters-item">$AMOUNT</span>
-            [% IF global.config.registration_open %]
-            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
-            [% END %]
+            <span class="masters-item">$100</span>
             [% IF 0 %]
             <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% ELSE %]
+                [% IF global.config.registration_open %]
+                <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+                [% END %]
             [% END %]
         </div>
     </div>
@@ -526,7 +536,7 @@
                 contributed to dozens of CPAN modules. He is a member of the Moose
                 core development team, and in early 2009 completed a TPF grant to
                 substantially rewrite and expand the Moose documentation. He is also
-                the co-author of Embedding Perl in HTML with Mason and RT Essentials.</p>
+                the co-BBauthor of Embedding Perl in HTML with Mason and RT Essentials.</p>
 
                 <p>He spends a lot of his free time on animal advocacy with <a href="http://www.exploreveg.org">Compassionate
                     Action for Animals</a>, working on a variety
@@ -547,16 +557,17 @@
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Friday June 19, 2016</span>
+            <span class="masters-item">Friday June 24<sup>th</sup>, 2016<br>(One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">NAME</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$AMOUNT</span>
-            [% IF global.config.registration_open %]
-            <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
-            [% END %]
             [% IF 0 %]
             <p>This class has reached maximum capacity.   Registration is now <strong>closed</strong>.</p>
+            [% ELSE %]
+                [% IF global.config.registration_open %]
+                <p><a href="[% make_uri( 'purchase' ) %]">Registration Open</a></p>
+                [% END %]
             [% END %]
         </div>
     </div>
