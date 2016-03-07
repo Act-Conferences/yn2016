@@ -39,17 +39,19 @@
                 are pushing boundaries to deliver the promise of the internet
                 to more people than ever.</p>'
         }
-        hostgator = {
-            name = 'HostGator'
-            url  = 'http://www.hostgator.com/'
-            logo = 'hostgator.jpg'
+        signatureinfo = {
+            name = 'Signature Information Solutions LLC'
+            url  = 'http://www.signatureinfo.com'
+            logo = 'sis-logo.png'
             description = '
-                <p>HostGator.com provides a full suite of web-based solutions to
-                small businesses, developers and individuals around the globe.
-                Since 2002 HostGator has been providing premium web hosting and
-                24/7 award winning customer service. HostGator offers shared
-                hosting, VPS hosting, Dedicated servers, domain names, and
-                more.</p>'
+                <p>Signature Information Solutions LLC has been at the forefront
+		of technology changes in the real estate title industry and traces
+		its roots back to 1911. Today, our company continues to meet the
+		challenges of technology changes and uses the Perl language for much
+		of its software. We believe that the use of open source software like
+		Perl, is part of our success formula.  Utilizing open source software
+		like Perl gives our programmers access to a rich library of high quality
+		software without the burden of onerous licensing fees.</p>'
         }
     }
 %]

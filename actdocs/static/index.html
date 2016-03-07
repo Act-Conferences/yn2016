@@ -4,6 +4,9 @@
 <div class="row">
         <img src="[% make_uri('img/mast.png') %]" style="text-align: middle; width: 100%; padding-bottom: 10px;">
 </div>
+<div class="row h1">
+	The Perl Conference in Orlando	
+</div>
 <div class="row">
     <div class="col-md-3">
         [% events = current_events() %]
@@ -40,7 +43,8 @@
         [% END %]
 
         <div class="row h3">YAPC::NA Details</div>
-        <p><em>Dates:</em> [% site.event_date %]</p>
+        <p><em>Dates:</em> [% site.event_date %]<br />
+        <em>Tutorials:</em> June 19, 23, 24</p>
         <p><em>Location:</em> Orlando, Florida (<a href="[% make_uri('location.html') %]">more information</a>)</p>
         <p><em>Regular Cost:</em> <b>$250</b></p>
         <p>Discounts and scholarships available for students and active or retired military.</p>
@@ -93,11 +97,6 @@
     </div>
     </div>
     <div class="col-md-9">
-        <div class="row h2">The next YAPC will be held in Orlando, Florida</div>
-        <div class="row">
-<br/>
-<p>The &quot;Yet Another Perl Conference&quot; is a high-quality, inexpensive technical conference with its roots in the Perl Mongers user groups. The conference celebrates the Perl programming language and is meant to be accessible to anyone, regardless of experience, yet valuable to even the most skilled of programmers. Each year the conference attracts hundreds of programmers from around the world, including luminaries such as Larry Wall, Randal Schwartz, and Damian Conway.</p>
-        </div>
 	<div class="row h3"> What you missed at YAPC 2015:</div>
 	<div class="row embed-responsive embed-responsive-4by3">
 	  <iframe width="560" height="315" src="https://www.youtube.com/embed/HAXGD3JE7pU" frameborder="0" allowfullscreen></iframe>
