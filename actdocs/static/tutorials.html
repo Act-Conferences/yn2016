@@ -26,7 +26,9 @@
             <ul class="masters-item">
                 <li><a href="#Perl6">Perl 6: Transparadigm Programming 101</a></li>
                 <li><a href="#Dancer">Programming the web with Dancer</a></li>
+                [% IF 0 %]
                 <li><a href="#FZTP">From Zero to Perl 5</a></li>
+                [% END %]
             </ul>
             <p class="masters-cat">Thursday, June 23<sup>rd</sup>:</p>
             <ul class="masters-item">
@@ -46,6 +48,10 @@
         <p>Unless otherwise noted, the tutorials are full day courses.  Each
         tutorial does have an additional cost, noted in the descriptions below
         and pre-registration is required.</p>   
+        <p>Each full-day class will begin at 9:00 AM.   There will be a 90
+        minute break at noon for lunch (not provided.)   A light morning and
+        afternoon snack will be provided.   Tutorials typically end around 5:00
+        PM, but end time may vary depending on the content.</p>
     </div>
 </div>
 
@@ -57,9 +63,12 @@
     <div class="col-xs-12 col-sm-5 col-md-3">
         <div class="masters-info">
             <span class="masters-cat">Date:</span>
-            <span class="masters-item">Friday June 19<sup>th</sup> 2016<br>(One full day)</span>
+            <span class="masters-item">Sunday June 19<sup>th</sup> 2016<br>(One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">Damian Conway</span>
+            <span class="masters-cat">Audience:</span>
+            <span class="masters-item">Some programming experience<br>
+                                       Beginner Perl 6</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$75</span>
             [% IF 0 %]
@@ -73,16 +82,67 @@
     </div>
     <div class="col-xs-12 col-sm-7 col-md-9">
         <div class="hideshow">
-            <p>SHORT DESCRIPTION</p>
+            <p>Perl 6 is a new production-ready multi-paradigm language in the
+            Perl family. It offers everything from low-level bitwise operations
+            on raw bytes, to a full range of built-in system commands, to
+            hygenic source code macros, to direct symbol-table introspection
+            and manipulation, to run-time composition of multiply-dispatched
+            multimethods from mixins, to object-oriented parsing grammars with
+            hybrid DFA/NFA rules, to concurrent higher-order functions applied
+            over infinite lists of pipelined arbitrary precision integers.</p>
+
+            <p>More importantly, Perl 6 does not restrict you to a single
+            paradigm across your entire application; nor within a single
+            compilation unit, namespace, block, subroutine, or even statement.
+            Instead, you can easily combine and integrate all these functional,
+            procedural, declarative, OO, and concurrent constructs within any
+            chunk of code, no matter how small, without losing readability or
+            efficiency. We call it "transparadigm programming": not five
+            separate choices of computation model, but a single computation
+            model with five integrated choices.</p>
+
+            <p>In other words, we stole the best features from 20 different
+            languages, and then spent over a decade working out how to fit them
+            together in a way that is clean, efficient, powerful, and still
+            usable by actual human beings. Perl 6 was the result.</p>
 
             <a class="hideshow-reveal" href="#Perl6">Show more</a>
             <div class="hideshow-hidden" style="display: none">
                 <h5>Course outline</h5>
+                <p>In this class, Damian will explain, discuss, and demonstrate
+                Perl 6 by examining some of the most interesting
+                transparadigmatic features of the language, using familiar
+                real-world examples stolen from every Programming 101 class
+                you've ever taken.</p>
 
-
-                <h5>Required materials</h5>
+                <h5>Who should attend</h5>
+                <p>This tutorial is designed for those with some experience in
+                one or more functional, procedural, declarative, OO, or
+                concurrent programming languages. Participants will be expected
+                to recognize and understand simple programs for such tasks as
+                mean/median/mode calculations, quicksort, mergesort, Fibonacci
+                number generation, simple data validation, prime number
+                recognition, bank account management, LaTeX parsing, LZW
+                compression, and SHA-256 digests.</p>
 
                 <h5>Speaker Bio</h5>
+                <p>Damian Conway is an established member of the international
+                Perl community. His energetic and enthusiastic approach to
+                training, coupled with his unrivalled skill and technical
+                expertise, have made him one of the most sought after Perl
+                speakers in the world.</p>
+
+                <p>He is the author of the books "Object Oriented Perl" and
+                "Perl Best Practices", and co-author of "Perl Hacks". As well
+                as being a prolific CPAN author with more than 70 modules he
+                has spent much of his spare time over the past 15 years
+                assisting Larry Wall in the development of the Perl 6
+                programming language.</p>
+
+                <p>Damian holds a B.Sc. and a Ph.D. in Computer Science and
+                between 2001 and 2010 was also an Adjunct Associate Professor
+                with the Faculty of Information Technology, Monash University,
+                Australia.</p>
                 <a class="hideshow-hide" href="#Perl6">Show less</a>
 
             </div> <!-- END hidden -->
@@ -103,6 +163,8 @@
             <span class="masters-cat">Instructors:</span>
             <span class="masters-item">Sawyer X<br>
                                        Mickey Nasriachi</span>
+            <span class="masters-cat">Audience:</span>
+            <span class="masters-item">Beginner - Intermediate</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$75</span>
             [% IF 0 %]
@@ -116,30 +178,50 @@
     </div>
     <div class="col-xs-12 col-sm-7 col-md-9">
         <div class="hideshow">
-            <p>Dancer is a lightweight featureful beautiful web framework in Perl.
-            The class covers how Dancer works, how to use it effectively, and
-            various tricks and hints for a successful and productive usage of it
-            in production environment, whether it is in a major company, a start
-            up, or your personal website.</p>
+            <p>This course is sponsored by Booking.com</p>
 
-            <h5>Class outline</h5>
-
-            <ol>
-                <li> Dancer 1 vs. Dancer 2
-                <li> Dancer2 syntax
-                <li> Writing tests
-                <li> Middlewares (mounting, Plack::Builder)
-                <li> Deployment
-                <li> Best practices
-                <li> Tips and tricks
-            </ol>
+            <p>Dancer is a lightweight featureful beautiful web framework in
+            Perl. The class covers how Dancer works, how to use it effectively,
+            and various tricks and hints for a successful and productive usage
+            of it in production environment, whether it is in a major company,
+            a start up, or your personal website.</p>
 
             <a class="hideshow-reveal" href="#Dancer">Show more</a>
             <div class="hideshow-hidden" style="display: none">
 
+                <h5>Class outline</h5>
+                <ul>
+                    <li> Brief history of Dancer
+                    <li> Dancer application structure
+                    <ul>
+                        <li> Creating
+                        <li> Configuring
+                        <li> Internal layout
+                        <li> File structure layout
+                    </ul>
+                    <li> Dancer2 syntax
+                    <ul>
+                        <li> Methods
+                        <li> Routing spec
+                        <li> Parameters and variables
+                        <li> Control flow
+                        <li> Cookies and sessions
+                        <li> Hooks
+                    </ul>
+                    <li> PSGI/Plack and Deployment of Dancer applications
+                    <li> Best practices
+                    <li> Tips and tricks
+                    <li> Bonus content (time permitting)
+                    <ul>
+                        <li> Writing tests
+                        <li> Middlewares
+                    </ul>
+                </ul>
+
+
                 <h5>Intended audience</h5>
 
-                <p>Perl beginner programmers, web beginners and web intermediates</p>
+                <p>Perl beginner programmers, web beginners, and web intermediates</p>
 
                 <p>Familiarity with Perl and at least a brief understanding of web programming is required.</p>
 
@@ -148,31 +230,30 @@
                 <p>Each student must bring:</p>
 
                 <ul>
-                <li> Laptop - mandatory
-                <li> Perl + Editor - mandatory
-                <li> Preinstalled modules:<br>
-                 - Dancer2 >=0.159000
-                  - Starman
-                   - Test::More >= 0.98
-                    - HTTP::Request
-                <li> Git
-                <li> cURL (if Linux/Mac - not essential)
+                    <li> Laptop - mandatory
+                    <li> Perl + Editor - mandatory
+                    <li> Preinstalled modules: Dancer2 >=0.163000, Starman, Test::More >= 0.98,
+                    <li> Test::WWW::Mechanize::PSGI, KiokuDB, KiokuDB::Backend::Files - all mandatory
+                    <li> cURL (if Linux/Mac) - optional
                 </ul>
 
+                <p><em>Please make sure to have the items installed ahead of
+                    time so we don't not take time of the course to installing
+                them.</em></p>
+
                 <h5>Speaker Biography</h5>
+                <p>Sawyer X has been a core developer of Dancer probably too
+                quickly after it came into the world. He has led Dancer and now
+                leads the new branch of Dancer: Dancer2. He's the current
+                project leader and main developer.</p>
 
-                <p>Sawyer X has been a core developer of Dancer probably too quickly
-                after it came into the world. He has led Dancer and now leads the new
-                branch of Dancer: Dancer2. He's the current project leader and main
-                developer.</p>
+                <p>Mickey is a core developer in Dancer2 and has provided some
+                of the bigger changes including major overhauls of core
+                components, along with massive cleanups of the inner workings
+                of Dancer.</p>
 
-                <p>Mickey is a core developer in Dancer2 and has provided some of the
-                bigger changes including major overhaults of core components, along
-                with massive cleanups of the inner workings of Dancer.</p>
-
-                <p>Both Sawyer and Mickey currently work on Dancer (amongst other
-                projects) at Booking.com.</p>
-
+                <p>Both Sawyer and Mickey currently work on Dancer (amongst
+                other projects) at Booking.com.</p>
 
                 <a class="hideshow-hide" href="#Dancer">Show less</a>
             </div> <!-- END hidden -->
@@ -181,6 +262,7 @@
     </div> <!-- END Column -->
 </div> <!-- END row -->
  
+[% IF 0 %] -- NEED JOHN TO SEND IN HIS TEXT!!!
 <div class="row">
     <div class="h2 col-xs-12">From Zero to Perl 5</div>
     <a name="FZTP"></a>
@@ -193,6 +275,8 @@
                                        (One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">John Anderson</span>
+            <span class="masters-cat">Audience:</span>
+            <span class="masters-item">Beginner</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$75</span>
             [% IF 0 %]
@@ -246,6 +330,8 @@
         </div> <!-- END hideshow -->
     </div> <!-- END Column -->
 </div> <!-- END row -->
+[% END %] 
+
 
 <div class="row">
     <div class="h2 col-xs-12">Thinking Functionally in Perl 5 &amp; 6</div>
@@ -258,6 +344,8 @@
             <span class="masters-item">Thursday, June 23<sup>rd</sup> 2016<br>(One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">Damian Conway</span>
+            <span class="masters-cat">Audience:</span>
+            <span class="masters-item">Intermediate - Experienced</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$175</span>
             [% IF 0 %]
@@ -271,16 +359,70 @@
     </div>
     <div class="col-xs-12 col-sm-7 col-md-9">
         <div class="hideshow">
-            <p>SHORT DESCRIPTION</p>
+            <p>You don't have to learn Haskell or Scala or Scheme to understand
+            functional programming.</p>
+
+            <p>You don't have to use Haskell or Scala or Scheme to start
+            reaping the benefits of the functional paradigm.</p>
+
+            <p>Perl 6 is a fully featured functional language, and Perl 5
+            offers surprisingly strong support for functional programming as
+            well. In fact, if you’re currently coding in either Perl 5
+            or Perl 6, you’re almost certainly already doing functional
+            programming.</p>
+
+            <p>This class explores many of the fundamental ideas and specific
+            techniques of the functional paradigm, and demonstrates how to
+            write clean, efficient, and maintainable functional code in either
+            variety of modern Perl.</p>
 
             <a class="hideshow-reveal" href="#Functional">Show more</a>
             <div class="hideshow-hidden" style="display: none">
                 <h5>Course outline</h5>
+                <ul>
+                    <li>What is functional programming?
+                    <li>Benefits, challenges, and limitations
+                    <li>Thinking functionally (with an imperative brain)
+                    <li>The myth of statelessness
+                    <li>Functional Perl 5
+                    <li>Functional Perl 6
+                    <li>Subroutines and closures
+                    <li>Declarative parameter lists
+                    <li>Multiple dispatch
+                    <li>Lexical subroutines
+                    <li>Named and anonymous closures
+                    <li>Code as data
+                    <li>Inversion-of-control techniques
+                    <li>Metaprogramming with higher-order functions
+                    <li>Mapping techniques
+                    <li>Reduction techniques
+                    <li>Integrating imperative and functional code
+                    <li>Concurrent functional programming
+                </ul>
 
-
-                <h5>Required materials</h5>
+                <h5>Who should attend</h5>
+                <p>Experienced Perl developers looking to take the next step up
+                to more powerful, more efficient, and more maintainable
+                programming techniques.</p>
 
                 <h5>Speaker Bio</h5>
+                <p>Damian Conway is an established member of the international
+                Perl community. His energetic and enthusiastic approach to
+                training, coupled with his unrivalled skill and technical
+                expertise, have made him one of the most sought after Perl
+                speakers in the world.</p>
+
+                <p>He is the author of the books "Object Oriented Perl" and
+                "Perl Best Practices", and co-author of "Perl Hacks". As well
+                as being a prolific CPAN author with more than 70 modules he
+                has spent much of his spare time over the past 15 years
+                assisting Larry Wall in the development of the Perl 6
+                programming language.</p>
+
+                <p>Damian holds a B.Sc. and a Ph.D. in Computer Science and
+                between 2001 and 2010 was also an Adjunct Associate Professor
+                with the Faculty of Information Technology, Monash University,
+                Australia.</p>
                 <a class="hideshow-hide" href="#Functional">Show less</a>
 
             </div> <!-- END hidden -->
@@ -300,6 +442,8 @@
                                        (One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">Dave Rolsky</span>
+            <span class="masters-cat">Audience:</span>
+            <span class="masters-item">Intermediate - Experienced</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$175</span>
             [% IF 0 %]
@@ -411,6 +555,8 @@
             <span class="masters-item">Friday, June 24<sup>th</sup> 2016<br>(One full day)</span>
             <span class="masters-cat">Instructor:</span>
             <span class="masters-item">Damian Conway</span>
+            <span class="masters-cat">Audience:</span>
+            <span class="masters-item">Any</span>
             <span class="masters-cat">Cost:</span>
             <span class="masters-item">$100</span>
             [% IF 0 %]
@@ -441,7 +587,7 @@
     </div> <!-- END Column -->
 </div> <!-- END row -->
 
-[% IF 0 %]
+[% IF 0 %]  -- GO CLASS UNDECIDED
 <div class="row">
     <div class="h2 col-xs-12">Introduction to Go</div>
     <a name="Go"></a>
@@ -549,6 +695,7 @@
 </div>
 [% END %]
 
+[% IF 0 %] -- BLANK TEMPLATE
 <div class="row">
     <div class="h2 col-xs-12">COURSE TITLE</div>
     <a name="TAG"></a>
@@ -589,6 +736,6 @@
         </div> <!-- END hideshow -->
     </div> <!-- END Column -->
 </div> <!-- END row -->
-
+[% END %]
 
 [% END %]
