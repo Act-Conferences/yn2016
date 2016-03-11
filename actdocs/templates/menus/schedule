@@ -10,9 +10,12 @@
        [% IF global.request.user.has_registered %]
            <li><a href="[% make_uri('myschedule') %]"> {{Personal Schedule}} </a></li>
        [% END %]
+       <li><a href="[% make_uri('tutorials.html') %]">Tutorials</a>
        <li class="divider"></li>
    [% ELSE %]
        <li>Schedule not released</li>
+       <li><a href="[% make_uri('tutorials.html') %]">Tutorials</a>
+       <li class="divider"></li>
    [% END %]
     
    [% IF global.request.user.is_admin or global.request.user.is_talks_admin %]
