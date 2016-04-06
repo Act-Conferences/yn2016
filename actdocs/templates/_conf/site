@@ -26,6 +26,20 @@
     site.event_date = site.event_date.replace('>\s+<', '> <');
 
     site.sponsors = {
+        cpanel = {
+            name = 'cPanel'
+            logo = 'cpanel.png'
+            url  = 'http://cpanel.com/'
+            description = '
+                <p>The cPanel & WHM software package is an easy-to-use control
+                panel that gives web hosts, and the website owners they serve,
+                the ability to quickly and easily manage their servers and
+                websites.  Developed in Perl and working in the SCRUM
+                development methodology, cPanel seeks highly motivated
+                development team members in our Houston location.   Visit
+                <a href=\'http://jobs.cpanel.com\'>http://jobs.cpanel.com</a> 
+                for open positions. </p>'
+        }
         bluehost = {
             name = 'Bluehost'
             url  = 'http://www.bluehost.com/'
