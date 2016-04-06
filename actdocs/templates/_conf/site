@@ -67,5 +67,19 @@
 		like Perl gives our programmers access to a rich library of high quality
 		software without the burden of onerous licensing fees.</p>'
         }
+        perlcareers = {
+            name = 'Perl Careers'
+            url  = 'http://perl.careers/'
+            logo = 'perlcareers logo_white.svg'
+            description = '
+                <p>Perl Careers is a Perl-focused recruitment consultancy, run
+                by a CPAN contributor with a recruitment background, rather
+                than by a non-technical person. I can understand the skills
+                you\'re looking to hire for, make sense of your GitHub profile,
+                and offer specific Perl-related career and salary advice. I am
+                very picky about only: recruiting for companies I\'d want to
+                work at; placing candidates who I\'d want to work with. I\'d love
+                to talk to you if you think you might be either.'
+        }
     }
 %]
