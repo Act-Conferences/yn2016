@@ -103,5 +103,19 @@
                 and telecommuter Perl Developers. Visit
                 www.grantstreet.com/careers to learn more.</p>'
         }
+        assurant = {
+            name = 'Assurant Mortgage Solutions'
+            url  = 'http://www.assurantspecialtyproperty.com/MortgageSolutions'
+            logo = 'Assurant_logo_4PMS.svg'
+            description = '
+               <p>Assurant Mortgage Solutions, a Perl user, is pleased to
+               sponsor Yet Another Perl Conference: North America to raise
+               awareness of the Perl programming language community and attract
+               the best and the brightest Perl programmers to learn about us.
+               YAPC is a great event that provides Perl professionals a place
+               to interact through open discussions, collaboration, design, and
+               code. We are excited to sponsor this event and continue our
+               engagement with the Perl community.'
+        }
     }
 %]
