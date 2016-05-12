@@ -157,7 +157,7 @@
 [% IF conferences.size %]
 <h4>{{Other Act conferences:}}</h4>
 <ul>
-[% FOREACH c = conferences %]<li><a href="[% c.url %]user/[% user.user_id %]">[% c.name %]</a><[% END %]
+[% FOREACH c = conferences %]<li><a href="[% c.url %]user/[% user.user_id %]">[% c.name %]</a>[% END %]
 </ul>
 [% END %]
 </div>
