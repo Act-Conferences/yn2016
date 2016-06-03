@@ -123,5 +123,11 @@
             logo  = '256px-Camelia.svg.png'
             description = ''
         }
+        craigslist = {
+            name = 'craigslist'
+            url  = 'https://www.craigslist.org/about/craigslist_is_hiring'
+            logo = 'Craigslist_v4.svg'
+            description = '<p>craigslist - a place to buy, sell, rent, hire, share, meet, swap, discuss, find, serve, connect, give away, announce, work, collect, care, perform, learn, marvel, mentor, befriend, fall in love, and/or save the world.</p>'
+        }
     }
 %]
