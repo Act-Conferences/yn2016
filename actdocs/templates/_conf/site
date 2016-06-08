@@ -129,5 +129,22 @@
             logo = 'Craigslist_v4.svg'
             description = '<p>craigslist - a place to buy, sell, rent, hire, share, meet, swap, discuss, find, serve, connect, give away, announce, work, collect, care, perform, learn, marvel, mentor, befriend, fall in love, and/or save the world.</p>'
         }
+        booking = {
+            name = 'Booking.com'
+            logo = 'booking.png'
+            url  = 'http://www.booking.com'
+            description = '
+                <p>Booking.com is an international success that build her
+                website on Perl. Booking.com, part of the Priceline Group
+                (Nasdaq: PCLN), is the world leader in booking accommodations
+                online. Each day, over 650,000 room nights are reserved on
+                Booking.com. Our IT Department focuses on development, scaling
+                and automation. We constantly challenge our current environment
+                to see how we can improve our business and go beyond our
+                current limits. Most of our tools are designed and built by us
+                with Open Source technologies. Booking.com runs one of the
+                world&apos;s largest Perl-powered websites and we offer a rapidly
+                evolving and dynamic environment.</p>'
+        }
     }
 %]
