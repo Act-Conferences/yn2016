@@ -43,7 +43,7 @@
         bluehost = {
             name = 'Bluehost'
             url  = 'http://www.bluehost.com/'
-            logo = 'bluehost.png'
+            logo = 'Bluehost Logo.svg'
             description = '
                 <p>Bluehost was founded in 2003 with one goal: to make a better
                 hosting company. Built from the ground up on open source
