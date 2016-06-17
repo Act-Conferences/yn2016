@@ -6,6 +6,7 @@
         <li><a href="[% make_uri('costs.html') %]">Price</a></li>
         <li><a href="[% make_uri('location.html') %]">Location</a></li>
         <li><a href="[% make_uri('sponsors.html') %]">Sponsors</a></li>
+        <li><a href="[% make_uri('volunteers.html') %]">Volunteers</a></li>
         <li><a href="[% make_uri('conduct.html') %]">Standards of Conduct</a></li>
         <li><a href="[% make_uri('news') %]">{{News}}</a></li>
         <li><a href="[% make_uri('wiki') %]">Wiki</a></li>
