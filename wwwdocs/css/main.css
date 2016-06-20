@@ -116,7 +116,11 @@ h6,
 }
 /* Schedule coloring */
 td.a,
-td.lat {
+td.lat,
+td.r1,
+td.r3,
+td.r6,
+td.rJ {
   background-color: #cbdff8;
   padding: 1px 2px;
 }
